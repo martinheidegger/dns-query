@@ -197,6 +197,20 @@
       }
     },
     {
+      "name": "brahma-world",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.brahma.world"
+      },
+      "description": "DNS-over-HTTPS server. Non Logging, filters ads, trackers and malware. DNSSEC ready, QNAME Minimization, No EDNS Client-Subnet.\nHosted in Nuremberg, Germany. (https://dns.brahma.world)",
+      "country": "Germany",
+      "location": {
+        "lat": 51.2993,
+        "long": 9.491
+      },
+      "filter": true
+    },
+    {
       "name": "circl-doh",
       "endpoint": {
         "protocol": "https:",
@@ -642,26 +656,13 @@
       "name": "fdn",
       "endpoint": {
         "protocol": "https:",
-        "host": "ns1.fdn.fr"
+        "host": "ns0.fdn.fr"
       },
       "description": "DoH server in France operated by FDN - French Data Network (non-profit ISP)\nhttps://www.fdn.fr/",
       "country": "France",
       "location": {
         "lat": 48.8582,
         "long": 2.3387
-      }
-    },
-    {
-      "name": "fdn-ipv6",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "ns0.fdn.fr"
-      },
-      "description": "DoH server in France operated by FDN - French Data Network (non-profit ISP)\nhttps://www.fdn.fr/",
-      "country": "France",
-      "location": {
-        "lat": 46,
-        "long": 2
       }
     },
     {
