@@ -656,7 +656,7 @@
       "name": "fdn",
       "endpoint": {
         "protocol": "https:",
-        "host": "ns1.fdn.fr"
+        "host": "ns0.fdn.fr"
       },
       "description": "DoH server in France operated by FDN - French Data Network (non-profit ISP)\nhttps://www.fdn.fr/",
       "country": "France",
@@ -843,7 +843,7 @@
       "name": "odoh-koki-ams",
       "endpoint": {
         "protocol": "https:",
-        "host": "odoh-target.alekberg.net",
+        "host": "odoh-nl.alekberg.net",
         "cors": true
       },
       "description": "Oblivious DoH target server in The Netherlands. No logs, No filter, DNSSEC.",
@@ -853,7 +853,7 @@
       "name": "odoh-koki-noads-ams",
       "endpoint": {
         "protocol": "https:",
-        "host": "odoh-target-noads.alekberg.net",
+        "host": "odoh-noads-nl.alekberg.net",
         "cors": true
       },
       "description": "Oblivious DoH target server in The Netherlands. No logs, filter ads and malware, DNSSEC.",
@@ -864,7 +864,7 @@
       "name": "odoh-koki-noads-se",
       "endpoint": {
         "protocol": "https:",
-        "host": "odoh-target-noads-se.alekberg.net",
+        "host": "odoh-noads-se.alekberg.net",
         "cors": true
       },
       "description": "Oblivious DoH target server in Sweden. No logs, filter ads and malware, DNSSEC.",
@@ -875,7 +875,7 @@
       "name": "odoh-koki-se",
       "endpoint": {
         "protocol": "https:",
-        "host": "odoh-target-se.alekberg.net",
+        "host": "odoh-se.alekberg.net",
         "cors": true
       },
       "description": "Oblivious DoH target server in Sweden. No logs, No filter, DNSSEC.",
@@ -892,41 +892,6 @@
       "description": "ODoH target server via Cloudflare, no logs.\nFilter ads, trackers and malware.",
       "filter": true,
       "cors": true
-    },
-    {
-      "name": "qihoo360-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.360.cn"
-      },
-      "description": "DoH server runned by Qihoo 360, has logs, supports DNSSEC. GFW filtering rules are applied.\nHomepage: https://sdns.360.net/",
-      "filter": true,
-      "log": true
-    },
-    {
-      "name": "quad101",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.twnic.tw",
-        "cors": true
-      },
-      "description": "DNSSEC-aware public resolver by the Taiwan Network Information Center (TWNIC)\nhttps://101.101.101.101/index_en.html",
-      "cors": true
-    },
-    {
-      "name": "quad9-doh-ip4-port443-filter-ecs-pri",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns11.quad9.net",
-        "ipv4": "9.9.9.11"
-      },
-      "description": "Quad9 (anycast) dnssec/no-log/filter/ecs 9.9.9.11 - 149.112.112.11",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
-      "filter": true
     },
     {
       "name": "quad9-doh-ip4-port443-filter-pri",
@@ -948,7 +913,7 @@
       "endpoint": {
         "protocol": "https:",
         "host": "dns12.quad9.net",
-        "ipv4": "9.9.9.12"
+        "ipv4": "149.112.112.12"
       },
       "description": "Quad9 (anycast) no-dnssec/no-log/no-filter/ecs 9.9.9.12 - 149.112.112.12",
       "country": "United States",
@@ -972,12 +937,13 @@
       }
     },
     {
-      "name": "quad9-doh-ip6-port5053-filter-pri",
+      "name": "quad9-doh-ip4-port5053-filter-pri",
       "endpoint": {
         "protocol": "https:",
-        "host": "dns9.quad9.net"
+        "host": "dns9.quad9.net",
+        "ipv4": "149.112.112.9"
       },
-      "description": "Quad9 (anycast) dnssec/no-log/filter 2620:fe::fe - 2620:fe::9 - 2620:fe::fe:9",
+      "description": "Quad9 (anycast) dnssec/no-log/filter 9.9.9.9 - 149.112.112.9 - 149.112.112.112",
       "country": "United States",
       "location": {
         "lat": 37.751,
@@ -1033,6 +999,40 @@
         "long": 23.332
       },
       "cors": true
+    },
+    {
+      "name": "uncensoreddns-dk-ipv4",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "unicast.uncensoreddns.org"
+      },
+      "description": "Also known as censurfridns.\nDoH, no logs, no filter, DNSSEC, unicast hosted in Denmark - https://blog.uncensoreddns.org",
+      "country": "Denmark",
+      "location": {
+        "lat": 55.7123,
+        "long": 12.0564
+      }
+    },
+    {
+      "name": "uncensoreddns-ipv4",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "anycast.uncensoreddns.org"
+      },
+      "description": "Also known as censurfridns.\nDoH, no logs, no filter, DNSSEC, anycast - https://blog.uncensoreddns.org",
+      "country": "Denmark",
+      "location": {
+        "lat": 55.7123,
+        "long": 12.0564
+      }
+    },
+    {
+      "name": "wikimedia",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "wikimedia-dns.org"
+      },
+      "description": "Wikimedia DNS (formerly called Wikidough), is a caching, recursive,\npublic resolver service that is run and managed by the Site\nReliability Engineering (Traffic) team at the Foundation.\nWikimedia DNS helps prevent some surveillance and censorship of our\nwikis and other websites by securing DNS lookups."
     }
   ]
 }
