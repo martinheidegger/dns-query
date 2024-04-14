@@ -139,7 +139,6 @@
         "protocol": "https:",
         "host": "dns.alidns.com",
         "ipv4": "223.5.5.5",
-        "method": "POST",
         "cors": true
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by Alibaba-Cloud.\nWarning: GFW filtering rules are applied by that resolver.\nHomepage: https://alidns.com/",
@@ -433,22 +432,6 @@
       }
     },
     {
-      "name": "dns.sb",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "185.222.222.222",
-        "ipv4": "185.222.222.222",
-        "cors": true
-      },
-      "description": "DoH server runned by xTom.com. No logs, no filtering, supports DNSSEC.\nHomepage: https://dns.sb",
-      "country": "Unknown",
-      "location": {
-        "lat": 47,
-        "long": 8
-      },
-      "cors": true
-    },
-    {
       "name": "dns0",
       "endpoint": {
         "protocol": "https:",
@@ -517,6 +500,16 @@
       "filter": true,
       "log": true,
       "cors": true
+    },
+    {
+      "name": "dnswarden-adult-doh",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.dnswarden.com",
+        "method": "POST"
+      },
+      "description": "Blocks adult content and enforces safe search on major search engines.\nFor further customization look here: https://dnswarden.com/customfilter.html",
+      "filter": true
     },
     {
       "name": "doh-cleanbrowsing-adult",
@@ -610,22 +603,6 @@
         "lat": 51.2993,
         "long": 9.491
       },
-      "cors": true
-    },
-    {
-      "name": "doh.tiar.app-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.tiar.app",
-        "cors": true
-      },
-      "description": "Non-Logging DNS-over-HTTPS (HTTP/2 & HTTP/3) server located in Singapore.\nFilters out ads, trackers and malware, supports DNSSEC, provided by id-gmail.",
-      "country": "Singapore",
-      "location": {
-        "lat": 1.2929,
-        "long": 103.8547
-      },
-      "filter": true,
       "cors": true
     },
     {
@@ -794,18 +771,6 @@
       "cors": true
     },
     {
-      "name": "odoh-id-gmail",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.tiar.app",
-        "path": "/odoh",
-        "cors": true
-      },
-      "description": "ODoH target server. Based in Singapore, no logs.\nFilter ads, trackers and malware.",
-      "filter": true,
-      "cors": true
-    },
-    {
       "name": "odoh-jp.tiar.app",
       "endpoint": {
         "protocol": "https:",
@@ -870,18 +835,6 @@
       "cors": true
     },
     {
-      "name": "odoh-tiarap.org",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.tiarap.org",
-        "path": "/odoh",
-        "cors": true
-      },
-      "description": "ODoH target server via Cloudflare, no logs.\nFilter ads, trackers and malware.",
-      "filter": true,
-      "cors": true
-    },
-    {
       "name": "qihoo360-doh",
       "endpoint": {
         "protocol": "https:",
@@ -921,13 +874,13 @@
       "endpoint": {
         "protocol": "https:",
         "host": "dns9.quad9.net",
-        "ipv4": "149.112.112.9"
+        "ipv4": "9.9.9.9"
       },
       "description": "Quad9 (anycast) dnssec/no-log/filter 9.9.9.9 - 149.112.112.9 - 149.112.112.112",
-      "country": "United States",
+      "country": "France",
       "location": {
-        "lat": 37.751,
-        "long": -97.822
+        "lat": 48.8582,
+        "long": 2.3387
       },
       "filter": true
     },
@@ -936,7 +889,7 @@
       "endpoint": {
         "protocol": "https:",
         "host": "dns12.quad9.net",
-        "ipv4": "149.112.112.12"
+        "ipv4": "9.9.9.12"
       },
       "description": "Quad9 (anycast) no-dnssec/no-log/no-filter/ecs 9.9.9.12 - 149.112.112.12",
       "country": "United States",
@@ -1007,32 +960,6 @@
         "long": 23.332
       },
       "cors": true
-    },
-    {
-      "name": "uncensoreddns-dk-ipv4",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "unicast.uncensoreddns.org"
-      },
-      "description": "Also known as censurfridns.\nDoH, no logs, no filter, DNSSEC, unicast hosted in Denmark - https://blog.uncensoreddns.org",
-      "country": "Denmark",
-      "location": {
-        "lat": 55.7123,
-        "long": 12.0564
-      }
-    },
-    {
-      "name": "uncensoreddns-ipv4",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "anycast.uncensoreddns.org"
-      },
-      "description": "Also known as censurfridns.\nDoH, no logs, no filter, DNSSEC, anycast - https://blog.uncensoreddns.org",
-      "country": "Denmark",
-      "location": {
-        "lat": 55.7123,
-        "long": 12.0564
-      }
     },
     {
       "name": "wikimedia",
