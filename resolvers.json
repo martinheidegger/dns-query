@@ -16,20 +16,6 @@
       "filter": true
     },
     {
-      "name": "adfilter-per",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "per.adfilter.net"
-      },
-      "description": "Hosted in Perth, Australia.\nBlocks ads, malware, trackers and more. No persistent logs. DNSSEC. No EDNS Client-Subnet.",
-      "country": "Australia",
-      "location": {
-        "lat": -31.8575,
-        "long": 115.8913
-      },
-      "filter": true
-    },
-    {
       "name": "adfilter-syd",
       "endpoint": {
         "protocol": "https:",
@@ -42,112 +28,6 @@
         "long": 151.1181
       },
       "filter": true
-    },
-    {
-      "name": "adfree.usableprivacy.net",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "adfree.usableprivacy.net"
-      },
-      "description": "Public updns DoH service with advertising, tracker and malware filters.\nHosted in Europe by @usableprivacy, details see: https://docs.usableprivacy.com",
-      "country": "Germany",
-      "location": {
-        "lat": 51.2993,
-        "long": 9.491
-      },
-      "filter": true
-    },
-    {
-      "name": "adguard-dns-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.adguard.com",
-        "ipv4": "94.140.15.15"
-      },
-      "description": "Remove ads and protect your computer from malware (over DoH)",
-      "country": "France",
-      "location": {
-        "lat": 48.8582,
-        "long": 2.3387
-      },
-      "filter": true
-    },
-    {
-      "name": "adguard-dns-family-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns-family.adguard.com",
-        "ipv4": "94.140.15.16"
-      },
-      "description": "Adguard DNS with safesearch and adult content blocking (over DoH)",
-      "country": "France",
-      "location": {
-        "lat": 48.8582,
-        "long": 2.3387
-      },
-      "filter": true
-    },
-    {
-      "name": "adguard-dns-unfiltered-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns-unfiltered.adguard.com",
-        "ipv4": "94.140.14.140"
-      },
-      "description": "AdGuard public DNS servers without filters (over DoH)",
-      "country": "France",
-      "location": {
-        "lat": 48.8582,
-        "long": 2.3387
-      }
-    },
-    {
-      "name": "ahadns-doh-la",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.la.ahadns.net",
-        "cors": true
-      },
-      "description": "A zero logging DNS with support for DNS-over-HTTPS (DoH) & DNS-over-TLS (DoT). Blocks ads, malware, trackers, viruses, ransomware, telemetry and more. No persistent logs. DNSSEC. Hosted in Los Angeles, USA. By https://ahadns.com/\nServer statistics can be seen at: https://statistics.ahadns.com/?server=la",
-      "country": "United States",
-      "location": {
-        "lat": 34.0549,
-        "long": -118.2578
-      },
-      "filter": true,
-      "cors": true
-    },
-    {
-      "name": "ahadns-doh-nl",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.nl.ahadns.net",
-        "cors": true
-      },
-      "description": "A zero logging DNS with support for DNS-over-HTTPS (DoH) & DNS-over-TLS (DoT). Blocks ads, malware, trackers, viruses, ransomware, telemetry and more. No persistent logs. DNSSEC. Hosted in Amsterdam, Netherlands. By https://ahadns.com/\nServer statistics can be seen at: https://statistics.ahadns.com/?server=nl",
-      "country": "Netherlands",
-      "location": {
-        "lat": 52.3824,
-        "long": 4.8995
-      },
-      "filter": true,
-      "cors": true
-    },
-    {
-      "name": "alidns-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.alidns.com",
-        "ipv4": "223.5.5.5"
-      },
-      "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by Alibaba-Cloud.\nWarning: GFW filtering rules are applied by that resolver.\nHomepage: https://alidns.com/",
-      "country": "China",
-      "location": {
-        "lat": 34.7725,
-        "long": 113.7266
-      },
-      "filter": true,
-      "log": true
     },
     {
       "name": "ams-ads-doh-nl",
@@ -433,15 +313,15 @@
       "name": "dns.sb",
       "endpoint": {
         "protocol": "https:",
-        "host": "185.222.222.222",
-        "method": "POST",
+        "host": "45.11.45.11",
+        "ipv4": "45.11.45.11",
         "cors": true
       },
       "description": "DoH server runned by xTom.com. No logs, no filtering, supports DNSSEC.\nHomepage: https://dns.sb",
-      "country": "Unknown",
+      "country": "Netherlands",
       "location": {
-        "lat": 47,
-        "long": 8
+        "lat": 52.3824,
+        "long": 4.8995
       },
       "cors": true
     },
@@ -514,15 +394,6 @@
       "filter": true,
       "log": true,
       "cors": true
-    },
-    {
-      "name": "dnswarden-adult-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.dnswarden.com"
-      },
-      "description": "Blocks adult content and enforces safe search on major search engines.\nFor further customization look here: https://dnswarden.com/customfilter.html",
-      "filter": true
     },
     {
       "name": "doh-cleanbrowsing-adult",
@@ -888,31 +759,12 @@
       "cors": true
     },
     {
-      "name": "qihoo360-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.360.cn"
-      },
-      "description": "DoH server runned by Qihoo 360, has logs, supports DNSSEC. GFW filtering rules are applied.\nHomepage: https://sdns.360.net/",
-      "filter": true,
-      "log": true
-    },
-    {
-      "name": "quad101",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.twnic.tw",
-        "cors": true
-      },
-      "description": "DNSSEC-aware public resolver by the Taiwan Network Information Center (TWNIC)\nhttps://101.101.101.101/index_en.html",
-      "cors": true
-    },
-    {
       "name": "quad9-doh-ip4-port443-filter-ecs-pri",
       "endpoint": {
         "protocol": "https:",
         "host": "dns11.quad9.net",
-        "ipv4": "149.112.112.11"
+        "ipv4": "9.9.9.11",
+        "method": "POST"
       },
       "description": "Quad9 (anycast) dnssec/no-log/filter/ecs 9.9.9.11 - 149.112.112.11",
       "country": "United States",
@@ -926,8 +778,8 @@
       "name": "quad9-doh-ip4-port443-filter-pri",
       "endpoint": {
         "protocol": "https:",
-        "host": "dns9.quad9.net",
-        "ipv4": "149.112.112.9"
+        "host": "dns.quad9.net",
+        "ipv4": "149.112.112.112"
       },
       "description": "Quad9 (anycast) dnssec/no-log/filter 9.9.9.9 - 149.112.112.9 - 149.112.112.112",
       "country": "United States",
@@ -942,7 +794,7 @@
       "endpoint": {
         "protocol": "https:",
         "host": "dns12.quad9.net",
-        "ipv4": "149.112.112.12"
+        "ipv4": "9.9.9.12"
       },
       "description": "Quad9 (anycast) no-dnssec/no-log/no-filter/ecs 9.9.9.12 - 149.112.112.12",
       "country": "United States",
@@ -964,6 +816,20 @@
         "lat": 37.751,
         "long": -97.822
       }
+    },
+    {
+      "name": "quad9-doh-ip6-port5053-filter-pri",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns9.quad9.net"
+      },
+      "description": "Quad9 (anycast) dnssec/no-log/filter 2620:fe::fe - 2620:fe::9 - 2620:fe::fe:9",
+      "country": "United States",
+      "location": {
+        "lat": 37.751,
+        "long": -97.822
+      },
+      "filter": true
     },
     {
       "name": "rethinkdns-doh",
