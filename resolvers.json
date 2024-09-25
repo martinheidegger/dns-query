@@ -43,11 +43,25 @@
       "filter": true
     },
     {
+      "name": "adfilter-syd",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "syd.adfilter.net"
+      },
+      "description": "Hosted in Sydney, Australia.\nBlocks ads, malware, trackers and more. No persistent logs. DNSSEC. No EDNS Client-Subnet.",
+      "country": "Australia",
+      "location": {
+        "lat": -33.7806,
+        "long": 151.1181
+      },
+      "filter": true
+    },
+    {
       "name": "adguard-dns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.14.14",
-        "ipv4": "94.140.14.14"
+        "host": "94.140.15.15",
+        "ipv4": "94.140.15.15"
       },
       "description": "Remove ads and protect your computer from malware (over DoH)",
       "country": "France",
@@ -61,8 +75,8 @@
       "name": "adguard-dns-family-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.15.16",
-        "ipv4": "94.140.15.16"
+        "host": "94.140.14.15",
+        "ipv4": "94.140.14.15"
       },
       "description": "Adguard DNS with safesearch and adult content blocking (over DoH)",
       "country": "France",
@@ -91,7 +105,6 @@
       "endpoint": {
         "protocol": "https:",
         "host": "doh.la.ahadns.net",
-        "method": "POST",
         "cors": true
       },
       "description": "A zero logging DNS with support for DNS-over-HTTPS (DoH) & DNS-over-TLS (DoT). Blocks ads, malware, trackers, viruses, ransomware, telemetry and more. No persistent logs. DNSSEC. Hosted in Los Angeles, USA. By https://ahadns.com/\nServer statistics can be seen at: https://statistics.ahadns.com/?server=la",
@@ -108,7 +121,6 @@
       "endpoint": {
         "protocol": "https:",
         "host": "doh.nl.ahadns.net",
-        "method": "POST",
         "cors": true
       },
       "description": "A zero logging DNS with support for DNS-over-HTTPS (DoH) & DNS-over-TLS (DoT). Blocks ads, malware, trackers, viruses, ransomware, telemetry and more. No persistent logs. DNSSEC. Hosted in Amsterdam, Netherlands. By https://ahadns.com/\nServer statistics can be seen at: https://statistics.ahadns.com/?server=nl",
@@ -272,15 +284,14 @@
       "name": "cloudflare",
       "endpoint": {
         "protocol": "https:",
-        "host": "1.0.0.1",
-        "ipv4": "1.0.0.1",
+        "host": "dns.cloudflare.com",
         "cors": true
       },
       "description": "Cloudflare DNS (anycast) - aka 1.1.1.1 / 1.0.0.1",
-      "country": "Australia",
+      "country": "United States",
       "location": {
-        "lat": -33.494,
-        "long": 143.2104
+        "lat": 37.751,
+        "long": -97.822
       },
       "cors": true
     },
@@ -288,8 +299,8 @@
       "name": "cloudflare-family",
       "endpoint": {
         "protocol": "https:",
-        "host": "1.1.1.3",
-        "ipv4": "1.1.1.3",
+        "host": "1.0.0.3",
+        "ipv4": "1.0.0.3",
         "cors": true
       },
       "description": "Cloudflare DNS (anycast) with malware protection and parental control - aka 1.1.1.3 / 1.0.0.3",
@@ -305,8 +316,8 @@
       "name": "cloudflare-security",
       "endpoint": {
         "protocol": "https:",
-        "host": "1.1.1.2",
-        "ipv4": "1.1.1.2",
+        "host": "1.0.0.2",
+        "ipv4": "1.0.0.2",
         "cors": true
       },
       "description": "Cloudflare DNS (anycast) with malware blocking - aka 1.1.1.2 / 1.0.0.2",
@@ -549,18 +560,16 @@
       "name": "dnspod",
       "endpoint": {
         "protocol": "https:",
-        "host": "doh.pub",
-        "cors": true
+        "host": "1.12.12.12"
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by dnspod/Tencent-cloud.\nHomepage: https://dnspod.cn\nWarning: GFW filtering rules are applied by this resolver.",
-      "country": "Hong Kong",
+      "country": "China",
       "location": {
-        "lat": 22.25,
-        "long": 114.1667
+        "lat": 34.7725,
+        "long": 113.7266
       },
       "filter": true,
-      "log": true,
-      "cors": true
+      "log": true
     },
     {
       "name": "doh-cleanbrowsing-adult",
@@ -632,7 +641,8 @@
       "name": "doh-ibksturm",
       "endpoint": {
         "protocol": "https:",
-        "host": "ibksturm.synology.me"
+        "host": "ibksturm.synology.me",
+        "method": "POST"
       },
       "description": "DoH & DoT Server, No Logging, No Filters, DNSSEC\nRunning privately by ibksturm in Thurgau, Switzerland",
       "country": "Switzerland",
@@ -701,8 +711,8 @@
       "name": "google",
       "endpoint": {
         "protocol": "https:",
-        "host": "8.8.4.4",
-        "ipv4": "8.8.4.4",
+        "host": "8.8.8.8",
+        "ipv4": "8.8.8.8",
         "cors": true
       },
       "description": "Google DNS (anycast)",
@@ -936,7 +946,7 @@
       "endpoint": {
         "protocol": "https:",
         "host": "dns11.quad9.net",
-        "ipv4": "149.112.112.11"
+        "ipv4": "9.9.9.11"
       },
       "description": "Quad9 (anycast) dnssec/no-log/filter/ecs 9.9.9.11 - 149.112.112.11",
       "country": "United States",
@@ -950,8 +960,8 @@
       "name": "quad9-doh-ip4-port443-filter-pri",
       "endpoint": {
         "protocol": "https:",
-        "host": "dns.quad9.net",
-        "ipv4": "149.112.112.112"
+        "host": "dns9.quad9.net",
+        "ipv4": "149.112.112.9"
       },
       "description": "Quad9 (anycast) dnssec/no-log/filter 9.9.9.9 - 149.112.112.9 - 149.112.112.112",
       "country": "United States",
@@ -993,8 +1003,8 @@
       "name": "quad9-doh-ip4-port5053-filter-pri",
       "endpoint": {
         "protocol": "https:",
-        "host": "dns9.quad9.net",
-        "ipv4": "149.112.112.9"
+        "host": "dns.quad9.net",
+        "ipv4": "149.112.112.112"
       },
       "description": "Quad9 (anycast) dnssec/no-log/filter 9.9.9.9 - 149.112.112.9 - 149.112.112.112",
       "country": "United States",
