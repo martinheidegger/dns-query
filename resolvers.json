@@ -75,8 +75,8 @@
       "name": "adguard-dns-family-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.15.16",
-        "ipv4": "94.140.15.16"
+        "host": "94.140.14.15",
+        "ipv4": "94.140.14.15"
       },
       "description": "Adguard DNS with safesearch and adult content blocking (over DoH)",
       "country": "France",
@@ -90,8 +90,8 @@
       "name": "adguard-dns-unfiltered-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.14.140",
-        "ipv4": "94.140.14.140"
+        "host": "94.140.14.141",
+        "ipv4": "94.140.14.141"
       },
       "description": "AdGuard public DNS servers without filters (over DoH)",
       "country": "France",
@@ -252,20 +252,6 @@
       "filter": true
     },
     {
-      "name": "brahma-world",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.brahma.world"
-      },
-      "description": "DNS-over-HTTPS server. Non Logging, filters ads, trackers and malware. DNSSEC ready, QNAME Minimization, No EDNS Client-Subnet.\nHosted in Nuremberg, Germany. (https://dns.brahma.world)",
-      "country": "Germany",
-      "location": {
-        "lat": 51.2993,
-        "long": 9.491
-      },
-      "filter": true
-    },
-    {
       "name": "circl-doh",
       "endpoint": {
         "protocol": "https:",
@@ -298,16 +284,11 @@
       "name": "cloudflare",
       "endpoint": {
         "protocol": "https:",
-        "host": "1.0.0.1",
-        "ipv4": "1.0.0.1",
+        "host": "162.159.46.1",
+        "ipv4": "162.159.46.1",
         "cors": true
       },
       "description": "Cloudflare DNS (anycast) - aka 1.1.1.1 / 1.0.0.1",
-      "country": "Australia",
-      "location": {
-        "lat": -33.494,
-        "long": 143.2104
-      },
       "cors": true
     },
     {
@@ -325,6 +306,21 @@
         "long": 143.2104
       },
       "filter": true,
+      "cors": true
+    },
+    {
+      "name": "cloudflare-ipv6",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.cloudflare.com",
+        "cors": true
+      },
+      "description": "Cloudflare DNS over IPv6 (anycast)",
+      "country": "United States",
+      "location": {
+        "lat": 37.751,
+        "long": -97.822
+      },
       "cors": true
     },
     {
@@ -927,11 +923,31 @@
       "cors": true
     },
     {
+      "name": "qihoo360-doh",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "doh.360.cn"
+      },
+      "description": "DoH server runned by Qihoo 360, has logs, GFW filtering rules are applied.\nHomepage: https://sdns.360.net",
+      "filter": true,
+      "log": true
+    },
+    {
+      "name": "quad101",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.twnic.tw",
+        "cors": true
+      },
+      "description": "DNSSEC-aware public resolver by the Taiwan Network Information Center (TWNIC)\nhttps://101.101.101.101/index_en.html",
+      "cors": true
+    },
+    {
       "name": "quad9-doh-ip4-port443-filter-ecs-pri",
       "endpoint": {
         "protocol": "https:",
         "host": "dns11.quad9.net",
-        "ipv4": "9.9.9.11"
+        "ipv4": "149.112.112.11"
       },
       "description": "Quad9 (anycast) dnssec/no-log/filter/ecs 9.9.9.11 - 149.112.112.11",
       "country": "United States",
@@ -946,16 +962,29 @@
       "endpoint": {
         "protocol": "https:",
         "host": "dns9.quad9.net",
-        "ipv4": "149.112.112.9",
-        "method": "POST"
+        "ipv4": "9.9.9.9"
       },
       "description": "Quad9 (anycast) dnssec/no-log/filter 9.9.9.9 - 149.112.112.9 - 149.112.112.112",
+      "country": "France",
+      "location": {
+        "lat": 48.8582,
+        "long": 2.3387
+      },
+      "filter": true
+    },
+    {
+      "name": "quad9-doh-ip4-port443-nofilter-ecs-pri",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns12.quad9.net",
+        "ipv4": "9.9.9.12"
+      },
+      "description": "Quad9 (anycast) no-dnssec/no-log/no-filter/ecs 9.9.9.12 - 149.112.112.12",
       "country": "United States",
       "location": {
         "lat": 37.751,
         "long": -97.822
-      },
-      "filter": true
+      }
     },
     {
       "name": "quad9-doh-ip4-port443-nofilter-pri",
@@ -970,20 +999,6 @@
         "lat": 37.751,
         "long": -97.822
       }
-    },
-    {
-      "name": "quad9-doh-ip6-port5053-filter-pri",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.quad9.net"
-      },
-      "description": "Quad9 (anycast) dnssec/no-log/filter 2620:fe::fe - 2620:fe::9 - 2620:fe::fe:9",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
-      "filter": true
     },
     {
       "name": "rethinkdns-doh",
