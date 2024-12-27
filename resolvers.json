@@ -194,6 +194,20 @@
       "cors": true
     },
     {
+      "name": "bebasdns-unfiltered-doh",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.bebasid.com",
+        "path": "/unfiltered"
+      },
+      "description": "BebasDNS by BebasID. DNSSEC and OpenNIC supported. This variant doesn't block anything",
+      "country": "Australia",
+      "location": {
+        "lat": -33.494,
+        "long": 143.2104
+      }
+    },
+    {
       "name": "blahdns-de-doh",
       "endpoint": {
         "protocol": "https:",
@@ -890,16 +904,6 @@
       "description": "ODoH target server via Cloudflare, no logs.\nFilter ads, trackers and malware.",
       "filter": true,
       "cors": true
-    },
-    {
-      "name": "qihoo360-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.360.cn"
-      },
-      "description": "DoH server runned by Qihoo 360, has logs, GFW filtering rules are applied.\nHomepage: https://sdns.360.net",
-      "filter": true,
-      "log": true
     },
     {
       "name": "quad101",
