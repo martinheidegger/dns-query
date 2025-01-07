@@ -194,6 +194,20 @@
       "cors": true
     },
     {
+      "name": "bebasdns-unfiltered-doh",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.bebasid.com",
+        "path": "/unfiltered"
+      },
+      "description": "BebasDNS by BebasID. DNSSEC and OpenNIC supported. This variant doesn't block anything",
+      "country": "Australia",
+      "location": {
+        "lat": -33.494,
+        "long": 143.2104
+      }
+    },
+    {
       "name": "blahdns-de-doh",
       "endpoint": {
         "protocol": "https:",
@@ -204,6 +218,20 @@
       "location": {
         "lat": 51.2993,
         "long": 9.491
+      },
+      "filter": true
+    },
+    {
+      "name": "blahdns-sg-doh",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "doh-sg.blahdns.com"
+      },
+      "description": "DNS-over-HTTPS server. No Logging, filters ads, trackers and malware. DNSSEC ready, QNAME Minimization, No EDNS Client-Subnet.",
+      "country": "United Kingdom",
+      "location": {
+        "lat": 51.4964,
+        "long": -0.1224
       },
       "filter": true
     },
@@ -481,6 +509,22 @@
       },
       "filter": true,
       "log": true,
+      "cors": true
+    },
+    {
+      "name": "dnsforge.de",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dnsforge.de",
+        "cors": true
+      },
+      "description": "Public DoH resolver running with Pihole for Adblocking (https://dnsforge.de).\nNon-logging, AD-filtering, supports DNSSEC. Hosted in Germany.",
+      "country": "Germany",
+      "location": {
+        "lat": 52.2998,
+        "long": 9.447
+      },
+      "filter": true,
       "cors": true
     },
     {
@@ -860,16 +904,6 @@
       "description": "ODoH target server via Cloudflare, no logs.\nFilter ads, trackers and malware.",
       "filter": true,
       "cors": true
-    },
-    {
-      "name": "qihoo360-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.360.cn"
-      },
-      "description": "DoH server runned by Qihoo 360, has logs, GFW filtering rules are applied.\nHomepage: https://sdns.360.net",
-      "filter": true,
-      "log": true
     },
     {
       "name": "quad101",
