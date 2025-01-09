@@ -472,6 +472,14 @@
       "filter": true
     },
     {
+      "name": "dns0-unfiltered",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "open.dns0.eu"
+      },
+      "description": "The unfiltered version of dns0.eu.\nhttps://open.dns0.eu/"
+    },
+    {
       "name": "dnscrypt.ca-ipv4-doh",
       "endpoint": {
         "protocol": "https:",
@@ -945,14 +953,6 @@
         "long": 23.332
       },
       "cors": true
-    },
-    {
-      "name": "wikimedia",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "wikimedia-dns.org"
-      },
-      "description": "Wikimedia DNS (formerly called Wikidough), is a caching, recursive,\npublic resolver service that is run and managed by the Site\nReliability Engineering (Traffic) team at the Foundation.\nWikimedia DNS helps prevent some surveillance and censorship of our\nwikis and other websites by securing DNS lookups."
     }
   ]
 }
