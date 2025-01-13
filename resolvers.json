@@ -194,20 +194,6 @@
       "cors": true
     },
     {
-      "name": "bebasdns-unfiltered-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.bebasid.com",
-        "path": "/unfiltered"
-      },
-      "description": "BebasDNS by BebasID. DNSSEC and OpenNIC supported. This variant doesn't block anything",
-      "country": "Australia",
-      "location": {
-        "lat": -33.494,
-        "long": 143.2104
-      }
-    },
-    {
       "name": "blahdns-de-doh",
       "endpoint": {
         "protocol": "https:",
@@ -906,32 +892,24 @@
       "cors": true
     },
     {
-      "name": "quad9-doh-ip4-port443-nofilter-pri",
+      "name": "qihoo360-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "dns10.quad9.net",
-        "ipv4": "149.112.112.10"
+        "host": "doh.360.cn"
       },
-      "description": "Quad9 (anycast) no-dnssec/no-log/no-filter 9.9.9.10 - 149.112.112.10",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      }
+      "description": "DoH server runned by Qihoo 360, has logs, GFW filtering rules are applied.\nHomepage: https://sdns.360.net",
+      "filter": true,
+      "log": true
     },
     {
-      "name": "quad9-doh-ip6-port443-filter-pri",
+      "name": "quad101",
       "endpoint": {
         "protocol": "https:",
-        "host": "dns.quad9.net"
+        "host": "dns.twnic.tw",
+        "cors": true
       },
-      "description": "Quad9 (anycast) dnssec/no-log/filter 2620:fe::fe - 2620:fe::9 - 2620:fe::fe:9",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
-      "filter": true
+      "description": "DNSSEC-aware public resolver by the Taiwan Network Information Center (TWNIC)\nhttps://101.101.101.101/index_en.html",
+      "cors": true
     },
     {
       "name": "rethinkdns-doh",
