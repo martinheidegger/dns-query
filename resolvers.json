@@ -84,8 +84,8 @@
       "name": "adguard-dns-family-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.15.16",
-        "ipv4": "94.140.15.16"
+        "host": "94.140.14.15",
+        "ipv4": "94.140.14.15"
       },
       "description": "AdGuard DNS with safesearch and adult content blocking (over DoH)",
       "country": "France",
@@ -146,15 +146,14 @@
       "name": "alidns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "8.129.152.230",
-        "ipv4": "8.129.152.230",
-        "method": "POST"
+        "host": "1.71.20.37",
+        "ipv4": "1.71.20.37"
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by Alibaba-Cloud.\nHomepage: https://alidns.com\nWarning: GFW filtering rules are applied by this resolver.",
-      "country": "Singapore",
+      "country": "China",
       "location": {
-        "lat": 1.3667,
-        "long": 103.8
+        "lat": 37.7269,
+        "long": 112.4708
       },
       "filter": true,
       "log": true
@@ -283,8 +282,8 @@
       "name": "cloudflare-security",
       "endpoint": {
         "protocol": "https:",
-        "host": "1.1.1.2",
-        "ipv4": "1.1.1.2",
+        "host": "1.0.0.2",
+        "ipv4": "1.0.0.2",
         "cors": true
       },
       "description": "Cloudflare DNS (anycast) with malware blocking - aka 1.1.1.2 / 1.0.0.2",
@@ -295,6 +294,20 @@
       },
       "filter": true,
       "cors": true
+    },
+    {
+      "name": "comss.one",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.comss.one"
+      },
+      "description": "Comss.one DNS - DNS with adblock filters and antiphishing, gaining popularity among russian-speaking users.",
+      "country": "Russia",
+      "location": {
+        "lat": 55.7386,
+        "long": 37.6068
+      },
+      "filter": true
     },
     {
       "name": "controld-block-malware",
@@ -473,17 +486,26 @@
       "cors": true
     },
     {
+      "name": "dnslow.me",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dnslow.me"
+      },
+      "description": "dnslow.me is an open source project, also your advertisement and threat blocking, privacy-first, encrypted DNS.\nAll DNS requests will be protected with threat-intelligence feeds and randomly distributed to some other DNS resolvers.\nMore info on the [homepage](https://dnslow.me) and [GitHub](https://github.com/PeterDaveHello/dnslow.me)",
+      "filter": true,
+      "log": true
+    },
+    {
       "name": "dnspod",
       "endpoint": {
         "protocol": "https:",
-        "host": "120.53.53.53",
-        "ipv4": "120.53.53.53"
+        "host": "doh.pub"
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by dnspod/Tencent-cloud.\nHomepage: https://dnspod.cn\nWarning: GFW filtering rules are applied by this resolver.",
-      "country": "China",
+      "country": "Hong Kong",
       "location": {
-        "lat": 34.7725,
-        "long": 113.7266
+        "lat": 22.25,
+        "long": 114.1667
       },
       "filter": true,
       "log": true
@@ -632,62 +654,6 @@
       "cors": true
     },
     {
-      "name": "iij",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "public.dns.iij.jp",
-        "cors": true
-      },
-      "description": "DoH server operated by Internet Initiative Japan in Tokyo. Blocks child pornography.\nhttps://www.iij.ad.jp/",
-      "country": "Japan",
-      "location": {
-        "lat": 35.69,
-        "long": 139.69
-      },
-      "filter": true,
-      "log": true,
-      "cors": true
-    },
-    {
-      "name": "jp.tiar.app-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "jp.tiar.app",
-        "cors": true
-      },
-      "description": "Non-Logging, Non-Filtering DNS-over-HTTPS server in Japan.\nNo ECS, Support DNSSEC",
-      "country": "Japan",
-      "location": {
-        "lat": 35.6882,
-        "long": 139.7532
-      },
-      "cors": true
-    },
-    {
-      "name": "jp.tiarap.org",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "jp.tiarap.org",
-        "cors": true
-      },
-      "description": "DNS-over-HTTPS Server. Non-Logging, Non-Filtering, No ECS, Support DNSSEC.\nCached via Cloudflare.",
-      "cors": true
-    },
-    {
-      "name": "libredns",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.libredns.gr"
-      },
-      "description": "DoH server in Germany. No logging, but no DNS padding and no DNSSEC support.\nhttps://libredns.gr/",
-      "country": "Germany",
-      "location": {
-        "lat": 51.2993,
-        "long": 9.491
-      },
-      "filter": true
-    },
-    {
       "name": "nextdns",
       "endpoint": {
         "protocol": "https:",
@@ -827,8 +793,8 @@
       "name": "quad9-doh-ip4-port443-filter-pri",
       "endpoint": {
         "protocol": "https:",
-        "host": "dns9.quad9.net",
-        "ipv4": "149.112.112.9"
+        "host": "dns.quad9.net",
+        "ipv4": "149.112.112.112"
       },
       "description": "Quad9 (anycast) dnssec/no-log/filter 9.9.9.9 - 149.112.112.9 - 149.112.112.112",
       "country": "United States",
@@ -857,7 +823,7 @@
       "endpoint": {
         "protocol": "https:",
         "host": "dns10.quad9.net",
-        "ipv4": "9.9.9.10"
+        "ipv4": "149.112.112.10"
       },
       "description": "Quad9 (anycast) no-dnssec/no-log/no-filter 9.9.9.10 - 149.112.112.10",
       "country": "United States",
@@ -867,27 +833,14 @@
       }
     },
     {
-      "name": "quad9-doh-ip4-port5053-filter-pri",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.quad9.net",
-        "ipv4": "149.112.112.112"
-      },
-      "description": "Quad9 (anycast) dnssec/no-log/filter 9.9.9.9 - 149.112.112.9 - 149.112.112.112",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
-      "filter": true
-    },
-    {
       "name": "rethinkdns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "max.rethinkdns.com"
+        "host": "sky.rethinkdns.com",
+        "cors": true
       },
-      "description": "No-log, No-filter\nRethinkDNS, a stub (sky.rethinkdns.com hosted on Cloudflare) and recursive (max.rethinkdns.com hosted on fly.io) resolver\nThe stub server strips identification parameters from the request and acts as a proxy to another recursive resolver."
+      "description": "No-log, No-filter\nRethinkDNS, a stub (sky.rethinkdns.com hosted on Cloudflare) and recursive (max.rethinkdns.com hosted on fly.io) resolver\nThe stub server strips identification parameters from the request and acts as a proxy to another recursive resolver.",
+      "cors": true
     },
     {
       "name": "safesurfer-doh",
