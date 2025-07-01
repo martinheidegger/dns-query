@@ -447,24 +447,6 @@
       "cors": true
     },
     {
-      "name": "dns0",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns0.eu"
-      },
-      "description": "A free, sovereign and GDPR-compliant recursive DNS resolver with a\nstrong focus on security to protect the citizens and organizations of\nthe European Union.\nBlocks new domains, dynamic DNS, parked domains, uncommon TLDs, etc.\nhttps://www.dns0.eu/",
-      "filter": true
-    },
-    {
-      "name": "dns0-kids",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "kids.dns0.eu"
-      },
-      "description": "A free, sovereign and GDPR-compliant recursive DNS resolver with a\nstrong focus on security to protect the citizens and organizations of\nthe European Union.\nThis version blocks content not suitable for children.\nAlso blocks new domains, dynamic DNS, parked domains, uncommon TLDs, etc.\nhttps://www.dns0.eu/",
-      "filter": true
-    },
-    {
       "name": "dnscrypt.ca-ipv4-doh",
       "endpoint": {
         "protocol": "https:",
@@ -763,16 +745,6 @@
         "cors": true
       },
       "description": "Cloudflare ODoH server.\nhttps://cloudflare.com",
-      "cors": true
-    },
-    {
-      "name": "odoh-crypto-sx",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "odoh.crypto.sx",
-        "cors": true
-      },
-      "description": "ODoH target server. Anycast, no logs.\nBackend hosted by Scaleway. Maintained by Frank Denis.",
       "cors": true
     },
     {
