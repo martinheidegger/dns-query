@@ -146,14 +146,14 @@
       "name": "alidns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "39.103.26.204",
-        "ipv4": "39.103.26.204"
+        "host": "1.71.20.37",
+        "ipv4": "1.71.20.37"
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by Alibaba-Cloud.\nHomepage: https://alidns.com\nWarning: GFW filtering rules are applied by this resolver.",
       "country": "China",
       "location": {
-        "lat": 34.7725,
-        "long": 113.7266
+        "lat": 37.7269,
+        "long": 112.4708
       },
       "filter": true,
       "log": true
@@ -221,8 +221,8 @@
       "name": "cloudflare",
       "endpoint": {
         "protocol": "https:",
-        "host": "1.0.0.1",
-        "ipv4": "1.0.0.1",
+        "host": "1.1.1.1",
+        "ipv4": "1.1.1.1",
         "cors": true
       },
       "description": "Cloudflare DNS (anycast) - aka 1.1.1.1 / 1.0.0.1",
@@ -427,6 +427,23 @@
       "filter": true
     },
     {
+      "name": "dns0-kids",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "kids.dns0.eu"
+      },
+      "description": "A free, sovereign and GDPR-compliant recursive DNS resolver with a\nstrong focus on security to protect the citizens and organizations of\nthe European Union.\nThis version blocks content not suitable for children.\nAlso blocks new domains, dynamic DNS, parked domains, uncommon TLDs, etc.\nhttps://www.dns0.eu/",
+      "filter": true
+    },
+    {
+      "name": "dns0-unfiltered",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "open.dns0.eu"
+      },
+      "description": "The unfiltered version of dns0.eu.\nhttps://open.dns0.eu/"
+    },
+    {
       "name": "dnscrypt.ca-ipv4-doh",
       "endpoint": {
         "protocol": "https:",
@@ -471,13 +488,13 @@
       "name": "dnspod",
       "endpoint": {
         "protocol": "https:",
-        "host": "doh.pub"
+        "host": "1.12.12.12"
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by dnspod/Tencent-cloud.\nHomepage: https://dnspod.cn\nWarning: GFW filtering rules are applied by this resolver.",
-      "country": "Hong Kong",
+      "country": "China",
       "location": {
-        "lat": 22.25,
-        "long": 114.1667
+        "lat": 34.7725,
+        "long": 113.7266
       },
       "filter": true,
       "log": true
@@ -612,8 +629,8 @@
       "name": "google",
       "endpoint": {
         "protocol": "https:",
-        "host": "8.8.4.4",
-        "ipv4": "8.8.4.4",
+        "host": "8.8.8.8",
+        "ipv4": "8.8.8.8",
         "cors": true
       },
       "description": "Google DNS (anycast)",
@@ -783,16 +800,6 @@
       "cors": true
     },
     {
-      "name": "qihoo360-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.360.cn"
-      },
-      "description": "DoH server runned by Qihoo 360, has logs, GFW filtering rules are applied.\nHomepage: https://sdns.360.net",
-      "filter": true,
-      "log": true
-    },
-    {
       "name": "quad101",
       "endpoint": {
         "protocol": "https:",
@@ -807,7 +814,7 @@
       "endpoint": {
         "protocol": "https:",
         "host": "dns11.quad9.net",
-        "ipv4": "149.112.112.11"
+        "ipv4": "9.9.9.11"
       },
       "description": "Quad9 (anycast) dnssec/no-log/filter/ecs 9.9.9.11 - 149.112.112.11",
       "country": "United States",
@@ -878,11 +885,9 @@
       "name": "rethinkdns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "sky.rethinkdns.com",
-        "cors": true
+        "host": "max.rethinkdns.com"
       },
-      "description": "No-log, No-filter\nRethinkDNS, a stub (sky.rethinkdns.com hosted on Cloudflare) and recursive (max.rethinkdns.com hosted on fly.io) resolver\nThe stub server strips identification parameters from the request and acts as a proxy to another recursive resolver.",
-      "cors": true
+      "description": "No-log, No-filter\nRethinkDNS, a stub (sky.rethinkdns.com hosted on Cloudflare) and recursive (max.rethinkdns.com hosted on fly.io) resolver\nThe stub server strips identification parameters from the request and acts as a proxy to another recursive resolver."
     },
     {
       "name": "safesurfer-doh",
