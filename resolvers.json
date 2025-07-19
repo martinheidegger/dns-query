@@ -441,15 +441,6 @@
       "filter": true
     },
     {
-      "name": "dns0-kids",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "kids.dns0.eu"
-      },
-      "description": "A free, sovereign and GDPR-compliant recursive DNS resolver with a\nstrong focus on security to protect the citizens and organizations of\nthe European Union.\nThis version blocks content not suitable for children.\nAlso blocks new domains, dynamic DNS, parked domains, uncommon TLDs, etc.\nhttps://www.dns0.eu/",
-      "filter": true
-    },
-    {
       "name": "dnscrypt.ca-ipv4-doh",
       "endpoint": {
         "protocol": "https:",
@@ -824,21 +815,12 @@
       "name": "qihoo360-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "doh.360.cn"
+        "host": "doh.360.cn",
+        "method": "POST"
       },
       "description": "DoH server runned by Qihoo 360, has logs, GFW filtering rules are applied.\nHomepage: https://sdns.360.net",
       "filter": true,
       "log": true
-    },
-    {
-      "name": "quad101",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.twnic.tw",
-        "cors": true
-      },
-      "description": "DNSSEC-aware public resolver by the Taiwan Network Information Center (TWNIC)\nhttps://101.101.101.101/index_en.html",
-      "cors": true
     },
     {
       "name": "quad9-doh-ip4-port443-filter-ecs-pri",
