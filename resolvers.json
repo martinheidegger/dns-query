@@ -174,33 +174,6 @@
       "log": true
     },
     {
-      "name": "brahma-world",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.brahma.world"
-      },
-      "description": "DNS-over-HTTPS server. Non Logging, filters ads, trackers and malware. DNSSEC ready, QNAME Minimization, No EDNS Client-Subnet.\nHosted in Nuremberg, Germany. (https://dns.brahma.world)",
-      "country": "Germany",
-      "location": {
-        "lat": 51.2993,
-        "long": 9.491
-      },
-      "filter": true
-    },
-    {
-      "name": "circl-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.circl.lu"
-      },
-      "description": "DoH server operated by CIRCL, Computer Incident Response Center Luxembourg.\nHosted in Bettembourg, Luxembourg.",
-      "country": "Luxembourg",
-      "location": {
-        "lat": 49.7498,
-        "long": 6.1661
-      }
-    },
-    {
       "name": "cisco-doh",
       "endpoint": {
         "protocol": "https:",
@@ -215,22 +188,6 @@
       },
       "filter": true,
       "log": true
-    },
-    {
-      "name": "cloudflare",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.cloudflare.com",
-        "ipv4": "1.0.0.1",
-        "cors": true
-      },
-      "description": "Cloudflare DNS (anycast) - aka 1.1.1.1 / 1.0.0.1",
-      "country": "Australia",
-      "location": {
-        "lat": -33.494,
-        "long": 143.2104
-      },
-      "cors": true
     },
     {
       "name": "cloudflare-family",
@@ -426,6 +383,15 @@
       "filter": true
     },
     {
+      "name": "dns0-kids",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "kids.dns0.eu"
+      },
+      "description": "A free, sovereign and GDPR-compliant recursive DNS resolver with a\nstrong focus on security to protect the citizens and organizations of\nthe European Union.\nThis version blocks content not suitable for children.\nAlso blocks new domains, dynamic DNS, parked domains, uncommon TLDs, etc.\nhttps://www.dns0.eu/",
+      "filter": true
+    },
+    {
       "name": "dnscrypt.ca-ipv4-doh",
       "endpoint": {
         "protocol": "https:",
@@ -567,16 +533,14 @@
       "name": "doh.ffmuc.net",
       "endpoint": {
         "protocol": "https:",
-        "host": "doh.ffmuc.net",
-        "cors": true
+        "host": "doh.ffmuc.net"
       },
       "description": "An open (non-logging, non-filtering, non-censoring) DoH resolver operated by Freifunk Munich with nodes in DE.\nhttps://ffmuc.net/",
       "country": "Germany",
       "location": {
         "lat": 51.2993,
         "long": 9.491
-      },
-      "cors": true
+      }
     },
     {
       "name": "doh.ibksturm",
