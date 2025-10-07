@@ -2,19 +2,6 @@
   "$schema": "https://martinheidegger.github.io/dns-query/resolvers.schema.json",
   "resolvers": [
     {
-      "name": "a-and-a",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.aa.net.uk"
-      },
-      "description": "Non-filtering, No-logging, DNSSEC DoH operated by Andrews & Arnold LTD.\nHomepage: https://www.aa.net.uk/dns/",
-      "country": "United Kingdom",
-      "location": {
-        "lat": 51.5888,
-        "long": -0.0247
-      }
-    },
-    {
       "name": "adfilter-adl",
       "endpoint": {
         "protocol": "https:",
@@ -39,20 +26,6 @@
       "location": {
         "lat": -31.8575,
         "long": 115.8913
-      },
-      "filter": true
-    },
-    {
-      "name": "adfilter-syd",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "syd.adfilter.net"
-      },
-      "description": "Hosted in Sydney, Australia.\nBlocks ads, malware, trackers and more. No persistent logs. DNSSEC. No EDNS Client-Subnet.",
-      "country": "Australia",
-      "location": {
-        "lat": -33.7806,
-        "long": 151.1181
       },
       "filter": true
     },
@@ -108,8 +81,8 @@
       "name": "adguard-dns-unfiltered-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.14.140",
-        "ipv4": "94.140.14.140"
+        "host": "94.140.14.141",
+        "ipv4": "94.140.14.141"
       },
       "description": "AdGuard public DNS servers without filters (over DoH)",
       "country": "France",
@@ -146,10 +119,25 @@
       "name": "alidns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "223.5.5.5",
-        "ipv4": "223.5.5.5"
+        "host": "8.129.152.230",
+        "ipv4": "8.129.152.230"
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by Alibaba-Cloud.\nHomepage: https://alidns.com\nWarning: GFW filtering rules are applied by this resolver.",
+      "country": "Singapore",
+      "location": {
+        "lat": 1.3667,
+        "long": 103.8
+      },
+      "filter": true,
+      "log": true
+    },
+    {
+      "name": "alidns-doh-ipv6",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "223.5.5.5"
+      },
+      "description": "A public DNS resolver over IPv6 that supports DoH/DoT in mainland China, provided by Alibaba-Cloud.\nHomepage: https://alidns.com\nWarning: GFW filtering rules are applied by this resolver.",
       "country": "China",
       "location": {
         "lat": 34.7725,
@@ -205,16 +193,11 @@
       "name": "cloudflare",
       "endpoint": {
         "protocol": "https:",
-        "host": "1.1.1.1",
-        "ipv4": "1.1.1.1",
+        "host": "162.159.36.1",
+        "ipv4": "162.159.36.1",
         "cors": true
       },
       "description": "Cloudflare DNS (anycast) - aka 1.1.1.1 / 1.0.0.1",
-      "country": "Australia",
-      "location": {
-        "lat": -33.494,
-        "long": 143.2104
-      },
       "cors": true
     },
     {
@@ -238,7 +221,7 @@
       "name": "cloudflare-ipv6",
       "endpoint": {
         "protocol": "https:",
-        "host": "cloudflare-dns.com",
+        "host": "dns.cloudflare.com",
         "cors": true
       },
       "description": "Cloudflare DNS over IPv6 (anycast)",
@@ -253,8 +236,8 @@
       "name": "cloudflare-security",
       "endpoint": {
         "protocol": "https:",
-        "host": "1.0.0.2",
-        "ipv4": "1.0.0.2",
+        "host": "1.1.1.2",
+        "ipv4": "1.1.1.2",
         "cors": true
       },
       "description": "Cloudflare DNS (anycast) with malware blocking - aka 1.1.1.2 / 1.0.0.2",
@@ -426,23 +409,6 @@
       "filter": true
     },
     {
-      "name": "dns0-kids",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "kids.dns0.eu"
-      },
-      "description": "A free, sovereign and GDPR-compliant recursive DNS resolver with a\nstrong focus on security to protect the citizens and organizations of\nthe European Union.\nThis version blocks content not suitable for children.\nAlso blocks new domains, dynamic DNS, parked domains, uncommon TLDs, etc.\nhttps://www.dns0.eu/",
-      "filter": true
-    },
-    {
-      "name": "dns0-unfiltered",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "open.dns0.eu"
-      },
-      "description": "The unfiltered version of dns0.eu.\nhttps://open.dns0.eu/"
-    },
-    {
       "name": "dnscrypt.ca-ipv4-doh",
       "endpoint": {
         "protocol": "https:",
@@ -467,8 +433,8 @@
       "description": "Public DoH resolver running with Pihole for Adblocking (https://dnsforge.de).\nNon-logging, AD-filtering, supports DNSSEC. Hosted in Germany.",
       "country": "Germany",
       "location": {
-        "lat": 51.2993,
-        "long": 9.491
+        "lat": 52.2998,
+        "long": 9.447
       },
       "filter": true,
       "cors": true
@@ -481,10 +447,10 @@
         "cors": true
       },
       "description": "Public DoH resolver (https://dnsforge.de)\nNon-logging, non-filtering, supports DNSSEC. Hosted in Germany.",
-      "country": "Unknown",
+      "country": "Germany",
       "location": {
-        "lat": 47,
-        "long": 8
+        "lat": 51.2993,
+        "long": 9.491
       },
       "cors": true
     },
@@ -594,15 +560,6 @@
       }
     },
     {
-      "name": "doh.ibksturm",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "ibksturm.synology.me",
-        "method": "POST"
-      },
-      "description": "DOH Server, No Logging, No Filters, DNSSEC, OpenNIC\nRunning privately by ibksturm in Thurgau, Switzerland"
-    },
-    {
       "name": "doh.tiar.app-doh",
       "endpoint": {
         "protocol": "https:",
@@ -638,8 +595,8 @@
       "name": "google",
       "endpoint": {
         "protocol": "https:",
-        "host": "8.8.4.4",
-        "ipv4": "8.8.4.4",
+        "host": "8.8.8.8",
+        "ipv4": "8.8.8.8",
         "cors": true
       },
       "description": "Google DNS (anycast)",
@@ -826,16 +783,6 @@
         "cors": true
       },
       "description": "DNSSEC-aware public resolver by the Taiwan Network Information Center (TWNIC)\nhttps://101.101.101.101/index_en.html",
-      "cors": true
-    },
-    {
-      "name": "rethinkdns-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "sky.rethinkdns.com",
-        "cors": true
-      },
-      "description": "No-log, No-filter\nRethinkDNS, a stub (sky.rethinkdns.com hosted on Cloudflare) and recursive (max.rethinkdns.com hosted on fly.io) resolver\nThe stub server strips identification parameters from the request and acts as a proxy to another recursive resolver.",
       "cors": true
     },
     {
