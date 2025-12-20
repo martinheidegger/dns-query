@@ -29,8 +29,8 @@
       "name": "adguard-dns-family-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.15.16",
-        "ipv4": "94.140.15.16"
+        "host": "94.140.14.15",
+        "ipv4": "94.140.14.15"
       },
       "description": "AdGuard DNS with safesearch and adult content blocking (over DoH)",
       "country": "France",
@@ -53,8 +53,8 @@
       "name": "adguard-dns-unfiltered-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.14.141",
-        "ipv4": "94.140.14.141"
+        "host": "94.140.14.140",
+        "ipv4": "94.140.14.140"
       },
       "description": "AdGuard public DNS servers without filters (over DoH)",
       "country": "France",
@@ -75,8 +75,8 @@
       "name": "alidns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "120.55.203.44",
-        "ipv4": "120.55.203.44"
+        "host": "47.108.0.63",
+        "ipv4": "47.108.0.63"
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by Alibaba-Cloud.\nHomepage: https://alidns.com\nWarning: GFW filtering rules are applied by this resolver.",
       "country": "China",
@@ -135,14 +135,15 @@
       "name": "cloudflare",
       "endpoint": {
         "protocol": "https:",
-        "host": "cloudflare-dns.com",
+        "host": "1.0.0.1",
+        "ipv4": "1.0.0.1",
         "cors": true
       },
       "description": "Cloudflare DNS (anycast) - aka 1.1.1.1 / 1.0.0.1",
-      "country": "United States",
+      "country": "Australia",
       "location": {
-        "lat": 37.751,
-        "long": -97.822
+        "lat": -33.494,
+        "long": 143.2104
       },
       "cors": true
     },
@@ -150,8 +151,8 @@
       "name": "cloudflare-family",
       "endpoint": {
         "protocol": "https:",
-        "host": "1.1.1.3",
-        "ipv4": "1.1.1.3",
+        "host": "1.0.0.3",
+        "ipv4": "1.0.0.3",
         "cors": true
       },
       "description": "Cloudflare DNS (anycast) with malware protection and parental control - aka 1.1.1.3 / 1.0.0.3",
@@ -167,7 +168,7 @@
       "name": "cloudflare-ipv6",
       "endpoint": {
         "protocol": "https:",
-        "host": "dns.cloudflare.com",
+        "host": "cloudflare-dns.com",
         "cors": true
       },
       "description": "Cloudflare DNS over IPv6 (anycast)",
@@ -182,8 +183,8 @@
       "name": "cloudflare-security",
       "endpoint": {
         "protocol": "https:",
-        "host": "1.1.1.2",
-        "ipv4": "1.1.1.2",
+        "host": "1.0.0.2",
+        "ipv4": "1.0.0.2",
         "cors": true
       },
       "description": "Cloudflare DNS (anycast) with malware blocking - aka 1.1.1.2 / 1.0.0.2",
@@ -194,6 +195,20 @@
       },
       "filter": true,
       "cors": true
+    },
+    {
+      "name": "comss.one",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.comss.one"
+      },
+      "description": "Comss.one DNS - DNS with adblock filters and antiphishing, gaining popularity among russian-speaking users.",
+      "country": "Russia",
+      "location": {
+        "lat": 55.7386,
+        "long": 37.6068
+      },
+      "filter": true
     },
     {
       "name": "controld-block-malware",
@@ -293,15 +308,15 @@
       "name": "dns.sb",
       "endpoint": {
         "protocol": "https:",
-        "host": "45.11.45.11",
-        "ipv4": "45.11.45.11",
+        "host": "185.222.222.222",
+        "ipv4": "185.222.222.222",
         "cors": true
       },
       "description": "DoH server runned by xTom.com. No logs, no filtering, supports DNSSEC.\nHomepage: https://dns.sb",
-      "country": "Netherlands",
+      "country": "Unknown",
       "location": {
-        "lat": 52.3824,
-        "long": 4.8995
+        "lat": 47,
+        "long": 8
       },
       "cors": true
     },
@@ -422,8 +437,8 @@
       "name": "google",
       "endpoint": {
         "protocol": "https:",
-        "host": "8.8.8.8",
-        "ipv4": "8.8.8.8",
+        "host": "8.8.4.4",
+        "ipv4": "8.8.4.4",
         "cors": true
       },
       "description": "Google DNS (anycast)",
@@ -522,6 +537,7 @@
         "protocol": "https:",
         "host": "jp.tiar.app",
         "path": "/odoh",
+        "method": "POST",
         "cors": true
       },
       "description": "ODoH target server. no logs.",
@@ -554,21 +570,12 @@
       "name": "qihoo360-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "doh.360.cn"
+        "host": "doh.360.cn",
+        "method": "POST"
       },
       "description": "DoH server runned by Qihoo 360, has logs, GFW filtering rules are applied.\nHomepage: https://sdns.360.net",
       "filter": true,
       "log": true
-    },
-    {
-      "name": "quad101",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.twnic.tw",
-        "cors": true
-      },
-      "description": "DNSSEC-aware public resolver by the Taiwan Network Information Center (TWNIC)\nhttps://101.101.101.101/index_en.html",
-      "cors": true
     },
     {
       "name": "rethinkdns-doh",
