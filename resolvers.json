@@ -159,6 +159,19 @@
       "filter": true
     },
     {
+      "name": "circl-doh",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.circl.lu"
+      },
+      "description": "DoH server operated by CIRCL, Computer Incident Response Center Luxembourg.\nHosted in Bettembourg, Luxembourg.",
+      "country": "Luxembourg",
+      "location": {
+        "lat": 49.7498,
+        "long": 6.1661
+      }
+    },
+    {
       "name": "cisco-doh",
       "endpoint": {
         "protocol": "https:",
@@ -385,6 +398,20 @@
       "cors": true
     },
     {
+      "name": "dnsbunker",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dnsbunker.org"
+      },
+      "description": "A DNS resolver located in Germany.\nDesigned to block ads, malware, and surveillance. No logs.\nhttps://dnsbunker.org",
+      "country": "United States",
+      "location": {
+        "lat": 37.751,
+        "long": -97.822
+      },
+      "filter": true
+    },
+    {
       "name": "dnscrypt.ca-ipv4-doh",
       "endpoint": {
         "protocol": "https:",
@@ -413,6 +440,21 @@
         "long": 9.447
       },
       "filter": true,
+      "cors": true
+    },
+    {
+      "name": "dnsforge.de-nofilter",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "blank.dnsforge.de",
+        "cors": true
+      },
+      "description": "Public DoH resolver (https://dnsforge.de)\nNon-logging, non-filtering, supports DNSSEC. Hosted in Germany.",
+      "country": "Unknown",
+      "location": {
+        "lat": 47,
+        "long": 8
+      },
       "cors": true
     },
     {
@@ -661,105 +703,6 @@
         "path": "/dnscrypt-proxy"
       },
       "description": "NextDNS is a cloud-based private DNS service that gives you full control\nover what is allowed and what is blocked on the Internet.\nhttps://www.nextdns.io/\nTo select the server location, the \"-ultralow\" variant relies on bootstrap servers\ninstead of anycast."
-    },
-    {
-      "name": "njalla-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.njal.la"
-      },
-      "description": "Non-logging DoH server in Sweden operated by Njalla.\nhttps://dns.njal.la/",
-      "country": "Sweden",
-      "location": {
-        "lat": 59.3247,
-        "long": 18.056
-      }
-    },
-    {
-      "name": "odoh-cloudflare",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "odoh.cloudflare-dns.com",
-        "cors": true
-      },
-      "description": "Cloudflare ODoH server.\nhttps://cloudflare.com",
-      "cors": true
-    },
-    {
-      "name": "odoh-crypto-sx",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "odoh.crypto.sx",
-        "cors": true
-      },
-      "description": "ODoH target server. Anycast, no logs.\nBackend hosted by Scaleway. Maintained by Frank Denis.",
-      "cors": true
-    },
-    {
-      "name": "odoh-id-gmail",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.tiar.app",
-        "path": "/odoh",
-        "cors": true
-      },
-      "description": "ODoH target server. Based in Singapore, no logs.\nFilter ads, trackers and malware.",
-      "filter": true,
-      "cors": true
-    },
-    {
-      "name": "odoh-jp.tiar.app",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "jp.tiar.app",
-        "path": "/odoh",
-        "cors": true
-      },
-      "description": "ODoH target server. no logs.",
-      "cors": true
-    },
-    {
-      "name": "odoh-jp.tiarap.org",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "jp.tiarap.org",
-        "path": "/odoh",
-        "cors": true
-      },
-      "description": "ODoH target server via Cloudflare, no logs.",
-      "cors": true
-    },
-    {
-      "name": "odoh-tiarap.org",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.tiarap.org",
-        "path": "/odoh",
-        "cors": true
-      },
-      "description": "ODoH target server via Cloudflare, no logs.\nFilter ads, trackers and malware.",
-      "filter": true,
-      "cors": true
-    },
-    {
-      "name": "qihoo360-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.360.cn"
-      },
-      "description": "DoH server runned by Qihoo 360, has logs, GFW filtering rules are applied.\nHomepage: https://sdns.360.net",
-      "filter": true,
-      "log": true
-    },
-    {
-      "name": "quad101",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.twnic.tw",
-        "cors": true
-      },
-      "description": "DNSSEC-aware public resolver by the Taiwan Network Information Center (TWNIC)\nhttps://101.101.101.101/index_en.html",
-      "cors": true
     },
     {
       "name": "rethinkdns-doh",
