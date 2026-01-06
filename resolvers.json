@@ -114,6 +114,22 @@
       "description": "AdGuard public DNS servers without filters (over DoH, over IPv6)"
     },
     {
+      "name": "alidns-doh",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "223.6.6.6",
+        "ipv4": "223.6.6.6"
+      },
+      "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by Alibaba-Cloud.\nHomepage: https://alidns.com\nWarning: GFW filtering rules are applied by this resolver.",
+      "country": "China",
+      "location": {
+        "lat": 34.7725,
+        "long": 113.7266
+      },
+      "filter": true,
+      "log": true
+    },
+    {
       "name": "alidns-doh-ipv6",
       "endpoint": {
         "protocol": "https:",
@@ -175,11 +191,15 @@
       "name": "cloudflare",
       "endpoint": {
         "protocol": "https:",
-        "host": "162.159.36.1",
-        "ipv4": "162.159.36.1",
+        "host": "dns.cloudflare.com",
         "cors": true
       },
       "description": "Cloudflare DNS (anycast) - aka 1.1.1.1 / 1.0.0.1",
+      "country": "United States",
+      "location": {
+        "lat": 37.751,
+        "long": -97.822
+      },
       "cors": true
     },
     {
@@ -455,7 +475,8 @@
       "name": "dnspod",
       "endpoint": {
         "protocol": "https:",
-        "host": "1.12.12.12"
+        "host": "1.12.12.12",
+        "ipv4": "1.12.12.12"
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by dnspod/Tencent-cloud.\nHomepage: https://dnspod.cn\nWarning: GFW filtering rules are applied by this resolver.",
       "country": "China",
@@ -738,7 +759,6 @@
         "protocol": "https:",
         "host": "jp.tiar.app",
         "path": "/odoh",
-        "method": "POST",
         "cors": true
       },
       "description": "ODoH target server. no logs.",
@@ -765,26 +785,6 @@
       },
       "description": "ODoH target server via Cloudflare, no logs.\nFilter ads, trackers and malware.",
       "filter": true,
-      "cors": true
-    },
-    {
-      "name": "qihoo360-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.360.cn"
-      },
-      "description": "DoH server runned by Qihoo 360, has logs, GFW filtering rules are applied.\nHomepage: https://sdns.360.net",
-      "filter": true,
-      "log": true
-    },
-    {
-      "name": "quad101",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.twnic.tw",
-        "cors": true
-      },
-      "description": "DNSSEC-aware public resolver by the Taiwan Network Information Center (TWNIC)\nhttps://101.101.101.101/index_en.html",
       "cors": true
     },
     {
