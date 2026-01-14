@@ -47,8 +47,8 @@
       "name": "adguard-dns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.15.15",
-        "ipv4": "94.140.15.15"
+        "host": "94.140.14.14",
+        "ipv4": "94.140.14.14"
       },
       "description": "Remove ads and protect your computer from malware (over DoH)",
       "country": "France",
@@ -71,8 +71,8 @@
       "name": "adguard-dns-family-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.14.15",
-        "ipv4": "94.140.14.15"
+        "host": "94.140.15.16",
+        "ipv4": "94.140.15.16"
       },
       "description": "AdGuard DNS with safesearch and adult content blocking (over DoH)",
       "country": "France",
@@ -95,8 +95,8 @@
       "name": "adguard-dns-unfiltered-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.14.141",
-        "ipv4": "94.140.14.141"
+        "host": "94.140.14.140",
+        "ipv4": "94.140.14.140"
       },
       "description": "AdGuard public DNS servers without filters (over DoH)",
       "country": "France",
@@ -117,14 +117,14 @@
       "name": "alidns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "223.6.6.6",
-        "ipv4": "223.6.6.6"
+        "host": "1.71.20.37",
+        "ipv4": "1.71.20.37"
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by Alibaba-Cloud.\nHomepage: https://alidns.com\nWarning: GFW filtering rules are applied by this resolver.",
       "country": "China",
       "location": {
-        "lat": 34.7725,
-        "long": 113.7266
+        "lat": 37.7269,
+        "long": 112.4708
       },
       "filter": true,
       "log": true
@@ -191,15 +191,11 @@
       "name": "cloudflare",
       "endpoint": {
         "protocol": "https:",
-        "host": "dns.cloudflare.com",
+        "host": "162.159.36.1",
+        "ipv4": "162.159.36.1",
         "cors": true
       },
       "description": "Cloudflare DNS (anycast) - aka 1.1.1.1 / 1.0.0.1",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
       "cors": true
     },
     {
@@ -223,7 +219,7 @@
       "name": "cloudflare-ipv6",
       "endpoint": {
         "protocol": "https:",
-        "host": "cloudflare-dns.com",
+        "host": "dns.cloudflare.com",
         "cors": true
       },
       "description": "Cloudflare DNS over IPv6 (anycast)",
@@ -475,8 +471,7 @@
       "name": "dnspod",
       "endpoint": {
         "protocol": "https:",
-        "host": "1.12.12.12",
-        "ipv4": "1.12.12.12"
+        "host": "1.12.12.12"
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by dnspod/Tencent-cloud.\nHomepage: https://dnspod.cn\nWarning: GFW filtering rules are applied by this resolver.",
       "country": "China",
@@ -567,6 +562,14 @@
       }
     },
     {
+      "name": "doh.ibksturm",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "ibksturm.synology.me"
+      },
+      "description": "Switzerland, running by ibksturm"
+    },
+    {
       "name": "doh.tiar.app-doh",
       "endpoint": {
         "protocol": "https:",
@@ -602,8 +605,8 @@
       "name": "google",
       "endpoint": {
         "protocol": "https:",
-        "host": "8.8.8.8",
-        "ipv4": "8.8.8.8",
+        "host": "8.8.4.4",
+        "ipv4": "8.8.4.4",
         "cors": true
       },
       "description": "Google DNS (anycast)",
@@ -614,6 +617,77 @@
       },
       "log": true,
       "cors": true
+    },
+    {
+      "name": "iij",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "public.dns.iij.jp",
+        "cors": true
+      },
+      "description": "DoH server operated by Internet Initiative Japan in Tokyo. Blocks child pornography.\nhttps://www.iij.ad.jp/",
+      "country": "Japan",
+      "location": {
+        "lat": 35.69,
+        "long": 139.69
+      },
+      "filter": true,
+      "log": true,
+      "cors": true
+    },
+    {
+      "name": "jp.tiar.app-doh",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "jp.tiar.app",
+        "cors": true
+      },
+      "description": "Non-Logging, Non-Filtering DNS-over-HTTPS server in Japan.\nNo ECS, Support DNSSEC",
+      "country": "Japan",
+      "location": {
+        "lat": 35.6882,
+        "long": 139.7532
+      },
+      "cors": true
+    },
+    {
+      "name": "jp.tiarap.org",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "jp.tiarap.org",
+        "cors": true
+      },
+      "description": "DNS-over-HTTPS Server. Non-Logging, Non-Filtering, No ECS, Support DNSSEC.\nCached via Cloudflare.",
+      "cors": true
+    },
+    {
+      "name": "libredns",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "doh.libredns.gr"
+      },
+      "description": "DoH server in Germany. No logging, but no DNS padding and no DNSSEC support.\nhttps://libredns.gr/",
+      "country": "Germany",
+      "location": {
+        "lat": 51.2993,
+        "long": 9.491
+      },
+      "filter": true
+    },
+    {
+      "name": "libredns-noads",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "doh.libredns.gr",
+        "path": "/noads"
+      },
+      "description": "DoH server in Germany. No logging, but no DNS padding and no DNSSEC support.\nno ads version, uses StevenBlack's host list: https://github.com/StevenBlack/hosts",
+      "country": "Germany",
+      "location": {
+        "lat": 51.2993,
+        "long": 9.491
+      },
+      "filter": true
     },
     {
       "name": "nextdns",
@@ -627,6 +701,15 @@
         "lat": 37.751,
         "long": -97.822
       }
+    },
+    {
+      "name": "nextdns-ultralow",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.nextdns.io",
+        "path": "/dnscrypt-proxy"
+      },
+      "description": "NextDNS is a cloud-based private DNS service that gives you full control\nover what is allowed and what is blocked on the Internet.\nhttps://www.nextdns.io/\nTo select the server location, the \"-ultralow\" variant relies on bootstrap servers\ninstead of anycast."
     },
     {
       "name": "njalla-doh",
@@ -685,6 +768,17 @@
       "cors": true
     },
     {
+      "name": "odoh-jp.tiarap.org",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "jp.tiarap.org",
+        "path": "/odoh",
+        "cors": true
+      },
+      "description": "ODoH target server via Cloudflare, no logs.",
+      "cors": true
+    },
+    {
       "name": "odoh-tiarap.org",
       "endpoint": {
         "protocol": "https:",
@@ -694,6 +788,26 @@
       },
       "description": "ODoH target server via Cloudflare, no logs.\nFilter ads, trackers and malware.",
       "filter": true,
+      "cors": true
+    },
+    {
+      "name": "qihoo360-doh",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "doh.360.cn"
+      },
+      "description": "DoH server runned by Qihoo 360, has logs, GFW filtering rules are applied.\nHomepage: https://sdns.360.net",
+      "filter": true,
+      "log": true
+    },
+    {
+      "name": "quad101",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.twnic.tw",
+        "cors": true
+      },
+      "description": "DNSSEC-aware public resolver by the Taiwan Network Information Center (TWNIC)\nhttps://101.101.101.101/index_en.html",
       "cors": true
     },
     {
