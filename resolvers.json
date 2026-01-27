@@ -216,6 +216,21 @@
       "cors": true
     },
     {
+      "name": "cloudflare-ipv6",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.cloudflare.com",
+        "cors": true
+      },
+      "description": "Cloudflare DNS over IPv6 (anycast)",
+      "country": "United States",
+      "location": {
+        "lat": 37.751,
+        "long": -97.822
+      },
+      "cors": true
+    },
+    {
       "name": "cloudflare-security",
       "endpoint": {
         "protocol": "https:",
@@ -231,6 +246,36 @@
       },
       "filter": true,
       "cors": true
+    },
+    {
+      "name": "comss.one",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.comss.one"
+      },
+      "description": "Comss.one DNS - DNS with adblock filters and antiphishing, gaining popularity among russian-speaking users.",
+      "country": "Russia",
+      "location": {
+        "lat": 55.7386,
+        "long": 37.6068
+      },
+      "filter": true
+    },
+    {
+      "name": "controld-block-malware",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "freedns.controld.com",
+        "path": "/p1",
+        "ipv4": "76.76.2.11"
+      },
+      "description": "ControlD Free DNS. Take CONTROL of your Internet. Block unwanted content, bypass geo-restrictions and be more productive. DoH protocol and No logging. - https://controld.com/free-dns\nThis DNS blocks Malware domains.",
+      "country": "Canada",
+      "location": {
+        "lat": 43.6319,
+        "long": -79.3716
+      },
+      "filter": true
     },
     {
       "name": "controld-block-malware-ad",
@@ -745,16 +790,6 @@
       "description": "ODoH target server via Cloudflare, no logs.\nFilter ads, trackers and malware.",
       "filter": true,
       "cors": true
-    },
-    {
-      "name": "qihoo360-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.360.cn"
-      },
-      "description": "DoH server runned by Qihoo 360, has logs, GFW filtering rules are applied.\nHomepage: https://sdns.360.net",
-      "filter": true,
-      "log": true
     },
     {
       "name": "rethinkdns-doh",
