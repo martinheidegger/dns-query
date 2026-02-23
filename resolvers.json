@@ -750,19 +750,12 @@
       "name": "qihoo360-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "doh.360.cn"
+        "host": "doh.360.cn",
+        "method": "POST"
       },
       "description": "DoH server runned by Qihoo 360, has logs, GFW filtering rules are applied.\nHomepage: https://sdns.360.net",
       "filter": true,
       "log": true
-    },
-    {
-      "name": "rethinkdns-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "max.rethinkdns.com"
-      },
-      "description": "No-log, No-filter\nRethinkDNS, a stub (sky.rethinkdns.com hosted on Cloudflare) and recursive (max.rethinkdns.com hosted on fly.io) resolver\nThe stub server strips identification parameters from the request and acts as a proxy to another recursive resolver."
     },
     {
       "name": "safesurfer-doh",
