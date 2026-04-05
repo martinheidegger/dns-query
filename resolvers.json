@@ -455,22 +455,6 @@
       "log": true
     },
     {
-      "name": "dnspod",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "1.12.12.12",
-        "ipv4": "1.12.12.12"
-      },
-      "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by dnspod/Tencent-cloud.\nHomepage: https://dnspod.cn\nWarning: GFW filtering rules are applied by this resolver.",
-      "country": "China",
-      "location": {
-        "lat": 34.7725,
-        "long": 113.7266
-      },
-      "filter": true,
-      "log": true
-    },
-    {
       "name": "doh-cleanbrowsing-adult",
       "endpoint": {
         "protocol": "https:",
@@ -548,6 +532,15 @@
         "lat": 51.2993,
         "long": 9.491
       }
+    },
+    {
+      "name": "doh.ibksturm",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "ibksturm.synology.me",
+        "method": "POST"
+      },
+      "description": "Switzerland, running by ibksturm, Opennic, nologs, DNSSEC"
     },
     {
       "name": "doh.tiar.app-doh",
