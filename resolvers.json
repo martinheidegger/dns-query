@@ -470,42 +470,6 @@
       "log": true
     },
     {
-      "name": "doh-cleanbrowsing-adult",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.cleanbrowsing.org",
-        "path": "/doh/adult-filter/",
-        "cors": true
-      },
-      "description": "Blocks access to adult, pornographic and explicit sites. It does\nnot block proxy or VPNs, nor mixed-content sites. Sites like Reddit\nare allowed. Google and Bing are set to the Safe Mode.\nBy https://cleanbrowsing.org/",
-      "filter": true,
-      "cors": true
-    },
-    {
-      "name": "doh-cleanbrowsing-family",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.cleanbrowsing.org",
-        "path": "/doh/family-filter/",
-        "cors": true
-      },
-      "description": "Blocks access to adult, pornographic and explicit sites. It also\nblocks proxy and VPN domains that are used to bypass the filters.\nMixed content sites (like Reddit) are also blocked. Google, Bing and\nYoutube are set to the Safe Mode.\nBy https://cleanbrowsing.org/",
-      "filter": true,
-      "cors": true
-    },
-    {
-      "name": "doh-cleanbrowsing-security",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.cleanbrowsing.org",
-        "path": "/doh/security-filter/",
-        "cors": true
-      },
-      "description": "Block access to phishing, malware and malicious domains. It does not block adult content.\nBy https://cleanbrowsing.org/",
-      "filter": true,
-      "cors": true
-    },
-    {
       "name": "doh-crypto-sx",
       "endpoint": {
         "protocol": "https:",
@@ -711,6 +675,16 @@
         "cors": true
       },
       "description": "Cloudflare ODoH server.\nhttps://cloudflare.com",
+      "cors": true
+    },
+    {
+      "name": "odoh-crypto-sx",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "odoh.crypto.sx",
+        "cors": true
+      },
+      "description": "ODoH target server. Anycast, no logs.\nBackend hosted by Scaleway. Maintained by Frank Denis.",
       "cors": true
     },
     {
