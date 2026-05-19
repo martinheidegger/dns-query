@@ -117,8 +117,8 @@
       "name": "alidns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "47.122.8.11",
-        "ipv4": "47.122.8.11"
+        "host": "123.184.198.22",
+        "ipv4": "123.184.198.22"
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by Alibaba-Cloud.\nHomepage: https://alidns.com\nWarning: GFW filtering rules are applied by this resolver.",
       "country": "China",
@@ -206,8 +206,8 @@
       "name": "cloudflare",
       "endpoint": {
         "protocol": "https:",
-        "host": "162.159.46.1",
-        "ipv4": "162.159.46.1",
+        "host": "162.159.36.1",
+        "ipv4": "162.159.36.1",
         "cors": true
       },
       "description": "Cloudflare DNS (anycast) - aka 1.1.1.1 / 1.0.0.1",
@@ -228,6 +228,21 @@
         "long": 143.2104
       },
       "filter": true,
+      "cors": true
+    },
+    {
+      "name": "cloudflare-ipv6",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.cloudflare.com",
+        "cors": true
+      },
+      "description": "Cloudflare DNS over IPv6 (anycast)",
+      "country": "United States",
+      "location": {
+        "lat": 37.751,
+        "long": -97.822
+      },
       "cors": true
     },
     {
@@ -260,100 +275,6 @@
         "long": 37.6068
       },
       "filter": true
-    },
-    {
-      "name": "controld-block-malware",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "freedns.controld.com",
-        "path": "/p1",
-        "ipv4": "76.76.2.11"
-      },
-      "description": "ControlD Free DNS. Take CONTROL of your Internet. Block unwanted content, bypass geo-restrictions and be more productive. DoH protocol and No logging. - https://controld.com/free-dns\nThis DNS blocks Malware domains.",
-      "country": "Canada",
-      "location": {
-        "lat": 43.6319,
-        "long": -79.3716
-      },
-      "filter": true
-    },
-    {
-      "name": "controld-block-malware-ad",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "freedns.controld.com",
-        "path": "/p2",
-        "ipv4": "76.76.2.11"
-      },
-      "description": "ControlD Free DNS. Take CONTROL of your Internet. Block unwanted content, bypass geo-restrictions and be more productive. DoH protocol and No logging. - https://controld.com/free-dns\nThis DNS blocks Malware, Ads & Tracking domains.",
-      "country": "Canada",
-      "location": {
-        "lat": 43.6319,
-        "long": -79.3716
-      },
-      "filter": true
-    },
-    {
-      "name": "controld-block-malware-ad-social",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "freedns.controld.com",
-        "path": "/p3",
-        "ipv4": "76.76.2.11"
-      },
-      "description": "ControlD Free DNS. Take CONTROL of your Internet. Block unwanted content, bypass geo-restrictions and be more productive. DoH protocol and No logging. - https://controld.com/free-dns\nThis DNS blocks Malware, Ads & Tracking and Social Networks domains.",
-      "country": "Canada",
-      "location": {
-        "lat": 43.6319,
-        "long": -79.3716
-      },
-      "filter": true
-    },
-    {
-      "name": "controld-family-friendly",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "freedns.controld.com",
-        "path": "/family",
-        "ipv4": "76.76.2.11"
-      },
-      "description": "ControlD Free DNS. Take CONTROL of your Internet. Block unwanted content, bypass geo-restrictions and be more productive. DoH protocol and No logging. - https://controld.com/free-dns\nThis DNS blocks Malware, Ads & Tracking, Adult Content and Drugs domains.",
-      "country": "Canada",
-      "location": {
-        "lat": 43.6319,
-        "long": -79.3716
-      },
-      "filter": true
-    },
-    {
-      "name": "controld-uncensored",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "freedns.controld.com",
-        "path": "/uncensored",
-        "ipv4": "76.76.2.11"
-      },
-      "description": "ControlD Free DNS. Take CONTROL of your Internet. Block unwanted content, bypass geo-restrictions and be more productive. DoH protocol and No logging. - https://controld.com/free-dns\nThis DNS unblocks censored domains from various countries.",
-      "country": "Canada",
-      "location": {
-        "lat": 43.6319,
-        "long": -79.3716
-      }
-    },
-    {
-      "name": "controld-unfiltered",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "freedns.controld.com",
-        "path": "/p0",
-        "ipv4": "76.76.2.11"
-      },
-      "description": "ControlD Free DNS. Take CONTROL of your Internet. Block unwanted content, bypass geo-restrictions and be more productive. DoH protocol and No logging. - https://controld.com/free-dns\nThis is a Unfiltered DNS, no DNS record blocking or manipulation here, if you want to block Malware, Ads & Tracking or Social Network domains, use the other ControlD DNS configs.",
-      "country": "Canada",
-      "location": {
-        "lat": 43.6319,
-        "long": -79.3716
-      }
     },
     {
       "name": "dns.digitalsize.net",
@@ -397,21 +318,6 @@
         "long": 9.491
       },
       "filter": true
-    },
-    {
-      "name": "dnscrypt.ca-ipv4-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns1.dnscrypt.ca",
-        "cors": true
-      },
-      "description": "Canadian based, unfiltered, DNSSEC validating, and no logs... for your pleasure. https://dnscrypt.ca/",
-      "country": "Croatia",
-      "location": {
-        "lat": 45.1667,
-        "long": 15.5
-      },
-      "cors": true
     },
     {
       "name": "dnsforge.de",
@@ -458,7 +364,8 @@
       "name": "dnspod",
       "endpoint": {
         "protocol": "https:",
-        "host": "1.12.12.12"
+        "host": "120.53.53.53",
+        "ipv4": "120.53.53.53"
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by dnspod/Tencent-cloud.\nHomepage: https://dnspod.cn\nWarning: GFW filtering rules are applied by this resolver.",
       "country": "China",
@@ -468,6 +375,42 @@
       },
       "filter": true,
       "log": true
+    },
+    {
+      "name": "doh-cleanbrowsing-adult",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "doh.cleanbrowsing.org",
+        "path": "/doh/adult-filter/",
+        "cors": true
+      },
+      "description": "Blocks access to adult, pornographic and explicit sites. It does\nnot block proxy or VPNs, nor mixed-content sites. Sites like Reddit\nare allowed. Google and Bing are set to the Safe Mode.\nBy https://cleanbrowsing.org/",
+      "filter": true,
+      "cors": true
+    },
+    {
+      "name": "doh-cleanbrowsing-family",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "doh.cleanbrowsing.org",
+        "path": "/doh/family-filter/",
+        "cors": true
+      },
+      "description": "Blocks access to adult, pornographic and explicit sites. It also\nblocks proxy and VPN domains that are used to bypass the filters.\nMixed content sites (like Reddit) are also blocked. Google, Bing and\nYoutube are set to the Safe Mode.\nBy https://cleanbrowsing.org/",
+      "filter": true,
+      "cors": true
+    },
+    {
+      "name": "doh-cleanbrowsing-security",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "doh.cleanbrowsing.org",
+        "path": "/doh/security-filter/",
+        "cors": true
+      },
+      "description": "Block access to phishing, malware and malicious domains. It does not block adult content.\nBy https://cleanbrowsing.org/",
+      "filter": true,
+      "cors": true
     },
     {
       "name": "doh-crypto-sx",
@@ -548,8 +491,8 @@
       "name": "google",
       "endpoint": {
         "protocol": "https:",
-        "host": "8.8.4.4",
-        "ipv4": "8.8.4.4",
+        "host": "8.8.8.8",
+        "ipv4": "8.8.8.8",
         "cors": true
       },
       "description": "Google DNS (anycast)",
@@ -685,6 +628,18 @@
         "cors": true
       },
       "description": "ODoH target server. Anycast, no logs.\nBackend hosted by Scaleway. Maintained by Frank Denis.",
+      "cors": true
+    },
+    {
+      "name": "odoh-id-gmail",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "doh.tiar.app",
+        "path": "/odoh",
+        "cors": true
+      },
+      "description": "ODoH target server. Based in Singapore, no logs.\nFilter ads, trackers and malware.",
+      "filter": true,
       "cors": true
     },
     {
