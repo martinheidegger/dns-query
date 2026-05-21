@@ -459,22 +459,6 @@
       "log": true
     },
     {
-      "name": "dnspod",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "1.12.12.12",
-        "ipv4": "1.12.12.12"
-      },
-      "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by dnspod/Tencent-cloud.\nHomepage: https://dnspod.cn\nWarning: GFW filtering rules are applied by this resolver.",
-      "country": "China",
-      "location": {
-        "lat": 34.7725,
-        "long": 113.7266
-      },
-      "filter": true,
-      "log": true
-    },
-    {
       "name": "doh-cleanbrowsing-adult",
       "endpoint": {
         "protocol": "https:",
@@ -508,6 +492,36 @@
       },
       "description": "Block access to phishing, malware and malicious domains. It does not block adult content.\nBy https://cleanbrowsing.org/",
       "filter": true,
+      "cors": true
+    },
+    {
+      "name": "doh-crypto-sx",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "doh.crypto.sx",
+        "cors": true
+      },
+      "description": "DNS-over-HTTPS server. Anycast, no logs, no censorship, DNSSEC.\nGlobally cached via Cloudflare.\nMaintained by Frank Denis.",
+      "country": "United States",
+      "location": {
+        "lat": 37.751,
+        "long": -97.822
+      },
+      "cors": true
+    },
+    {
+      "name": "doh-crypto-sx-ipv6",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "doh-ipv6.crypto.sx",
+        "cors": true
+      },
+      "description": "DNS-over-HTTPS server accessible over IPv6. Anycast, no logs, no censorship, DNSSEC.\nGlobally cached via Cloudflare.\nMaintained by Frank Denis.",
+      "country": "United States",
+      "location": {
+        "lat": 37.751,
+        "long": -97.822
+      },
       "cors": true
     },
     {
