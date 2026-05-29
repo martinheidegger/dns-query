@@ -434,22 +434,6 @@
       "cors": true
     },
     {
-      "name": "dnsforge.de",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dnsforge.de",
-        "cors": true
-      },
-      "description": "Public DoH resolver running with Pihole for Adblocking (https://dnsforge.de).\nNon-logging, AD-filtering, supports DNSSEC. Hosted in Germany.",
-      "country": "Germany",
-      "location": {
-        "lat": 52.2998,
-        "long": 9.447
-      },
-      "filter": true,
-      "cors": true
-    },
-    {
       "name": "dnsforge.de-nofilter",
       "endpoint": {
         "protocol": "https:",
@@ -568,14 +552,6 @@
         "lat": 51.2993,
         "long": 9.491
       }
-    },
-    {
-      "name": "doh.ibksturm",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "ibksturm.synology.me"
-      },
-      "description": "Switzerland, running by ibksturm, Opennic, nologs, DNSSEC"
     },
     {
       "name": "doh.tiar.app-doh",
@@ -740,16 +716,6 @@
         "cors": true
       },
       "description": "Cloudflare ODoH server.\nhttps://cloudflare.com",
-      "cors": true
-    },
-    {
-      "name": "odoh-crypto-sx",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "odoh.crypto.sx",
-        "cors": true
-      },
-      "description": "ODoH target server. Anycast, no logs.\nBackend hosted by Scaleway. Maintained by Frank Denis.",
       "cors": true
     },
     {
