@@ -117,8 +117,8 @@
       "name": "alidns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "120.55.203.44",
-        "ipv4": "120.55.203.44"
+        "host": "123.184.198.22",
+        "ipv4": "123.184.198.22"
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by Alibaba-Cloud.\nHomepage: https://alidns.com\nWarning: GFW filtering rules are applied by this resolver.",
       "country": "China",
@@ -172,6 +172,16 @@
         "long": 9.491
       },
       "filter": true
+    },
+    {
+      "name": "cipherdns-jb1-doh-za",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "jb1-doh.cipherdns.co.za",
+        "cors": true
+      },
+      "description": "High-performance privacy DoH resolver based in South Africa. Zero logging, DNSSEC validation, unfiltered raw resolution.",
+      "cors": true
     },
     {
       "name": "circl-doh",
@@ -239,7 +249,7 @@
       "name": "cloudflare-ipv6",
       "endpoint": {
         "protocol": "https:",
-        "host": "cloudflare-dns.com",
+        "host": "dns.cloudflare.com",
         "cors": true
       },
       "description": "Cloudflare DNS over IPv6 (anycast)",
@@ -392,15 +402,15 @@
       "name": "dns.sb",
       "endpoint": {
         "protocol": "https:",
-        "host": "185.222.222.222",
-        "ipv4": "185.222.222.222",
+        "host": "45.11.45.11",
+        "ipv4": "45.11.45.11",
         "cors": true
       },
-      "description": "DoH server runned by xTom.com. No logs, no filtering, supports DNSSEC.\nHomepage: https://dns.sb",
-      "country": "Unknown",
+      "description": "DoH server run by xTom.com. No logs, no filtering, supports DNSSEC.\nHomepage: https://dns.sb",
+      "country": "Netherlands",
       "location": {
-        "lat": 47,
-        "long": 8
+        "lat": 52.3824,
+        "long": 4.8995
       },
       "cors": true
     },
@@ -434,6 +444,22 @@
       "cors": true
     },
     {
+      "name": "dnsforge.de",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dnsforge.de",
+        "cors": true
+      },
+      "description": "Public DoH resolver running with Pihole for Adblocking (https://dnsforge.de).\nNon-logging, AD-filtering, supports DNSSEC. Hosted in Germany.",
+      "country": "Germany",
+      "location": {
+        "lat": 51.2993,
+        "long": 9.491
+      },
+      "filter": true,
+      "cors": true
+    },
+    {
       "name": "dnsforge.de-nofilter",
       "endpoint": {
         "protocol": "https:",
@@ -441,10 +467,10 @@
         "cors": true
       },
       "description": "Public DoH resolver (https://dnsforge.de)\nNon-logging, non-filtering, supports DNSSEC. Hosted in Germany.",
-      "country": "Germany",
+      "country": "Unknown",
       "location": {
-        "lat": 51.2993,
-        "long": 9.491
+        "lat": 47,
+        "long": 8
       },
       "cors": true
     },
@@ -589,8 +615,8 @@
       "name": "google",
       "endpoint": {
         "protocol": "https:",
-        "host": "8.8.4.4",
-        "ipv4": "8.8.4.4",
+        "host": "8.8.8.8",
+        "ipv4": "8.8.8.8",
         "cors": true
       },
       "description": "Google DNS (anycast)",
@@ -617,21 +643,6 @@
       },
       "filter": true,
       "log": true,
-      "cors": true
-    },
-    {
-      "name": "jp.tiar.app-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "jp.tiar.app",
-        "cors": true
-      },
-      "description": "Non-Logging, Non-Filtering DNS-over-HTTPS server in Japan.\nNo ECS, Support DNSSEC",
-      "country": "Japan",
-      "location": {
-        "lat": 35.6882,
-        "long": 139.7532
-      },
       "cors": true
     },
     {
@@ -719,6 +730,16 @@
       "cors": true
     },
     {
+      "name": "odoh-crypto-sx",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "odoh.crypto.sx",
+        "cors": true
+      },
+      "description": "ODoH target server. Anycast, no logs.\nBackend hosted by Scaleway. Maintained by Frank Denis.",
+      "cors": true
+    },
+    {
       "name": "odoh-id-gmail",
       "endpoint": {
         "protocol": "https:",
@@ -748,7 +769,7 @@
         "protocol": "https:",
         "host": "doh.360.cn"
       },
-      "description": "DoH server runned by Qihoo 360, has logs, GFW filtering rules are applied.\nHomepage: https://sdns.360.net",
+      "description": "DoH server run by Qihoo 360, has logs, GFW filtering rules are applied.\nHomepage: https://sdns.360.net",
       "filter": true,
       "log": true
     },
