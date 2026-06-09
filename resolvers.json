@@ -95,8 +95,8 @@
       "name": "adguard-dns-unfiltered-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.14.140",
-        "ipv4": "94.140.14.140"
+        "host": "94.140.14.141",
+        "ipv4": "94.140.14.141"
       },
       "description": "AdGuard public DNS servers without filters (over DoH)",
       "country": "France",
@@ -117,14 +117,14 @@
       "name": "alidns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "47.122.8.11",
-        "ipv4": "47.122.8.11"
+        "host": "139.129.137.137",
+        "ipv4": "139.129.137.137"
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by Alibaba-Cloud.\nHomepage: https://alidns.com\nWarning: GFW filtering rules are applied by this resolver.",
       "country": "China",
       "location": {
-        "lat": 34.7725,
-        "long": 113.7266
+        "lat": 36.066,
+        "long": 120.3694
       },
       "filter": true,
       "log": true
@@ -213,21 +213,6 @@
       "log": true
     },
     {
-      "name": "cloudflare",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.cloudflare.com",
-        "cors": true
-      },
-      "description": "Cloudflare DNS (anycast) - aka 1.1.1.1 / 1.0.0.1",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
-      "cors": true
-    },
-    {
       "name": "cloudflare-family",
       "endpoint": {
         "protocol": "https:",
@@ -242,21 +227,6 @@
         "long": 143.2104
       },
       "filter": true,
-      "cors": true
-    },
-    {
-      "name": "cloudflare-ipv6",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "cloudflare-dns.com",
-        "cors": true
-      },
-      "description": "Cloudflare DNS over IPv6 (anycast)",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
       "cors": true
     },
     {
@@ -275,20 +245,6 @@
       },
       "filter": true,
       "cors": true
-    },
-    {
-      "name": "comss.one",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.comss.one"
-      },
-      "description": "Comss.one DNS - DNS with adblock filters and antiphishing, gaining popularity among russian-speaking users.",
-      "country": "Russia",
-      "location": {
-        "lat": 55.7386,
-        "long": 37.6068
-      },
-      "filter": true
     },
     {
       "name": "controld-block-malware",
@@ -466,10 +422,10 @@
         "cors": true
       },
       "description": "Public DoH resolver (https://dnsforge.de)\nNon-logging, non-filtering, supports DNSSEC. Hosted in Germany.",
-      "country": "Unknown",
+      "country": "Germany",
       "location": {
-        "lat": 47,
-        "long": 8
+        "lat": 51.2993,
+        "long": 9.491
       },
       "cors": true
     },
@@ -487,8 +443,7 @@
       "name": "dnspod",
       "endpoint": {
         "protocol": "https:",
-        "host": "120.53.53.53",
-        "ipv4": "120.53.53.53"
+        "host": "1.12.12.12"
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by dnspod/Tencent-cloud.\nHomepage: https://dnspod.cn\nWarning: GFW filtering rules are applied by this resolver.",
       "country": "China",
@@ -520,18 +475,6 @@
         "cors": true
       },
       "description": "Blocks access to adult, pornographic and explicit sites. It also\nblocks proxy and VPN domains that are used to bypass the filters.\nMixed content sites (like Reddit) are also blocked. Google, Bing and\nYoutube are set to the Safe Mode.\nBy https://cleanbrowsing.org/",
-      "filter": true,
-      "cors": true
-    },
-    {
-      "name": "doh-cleanbrowsing-security",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.cleanbrowsing.org",
-        "path": "/doh/security-filter/",
-        "cors": true
-      },
-      "description": "Block access to phishing, malware and malicious domains. It does not block adult content.\nBy https://cleanbrowsing.org/",
       "filter": true,
       "cors": true
     },
@@ -598,22 +541,6 @@
       "location": {
         "lat": 1.2929,
         "long": 103.8547
-      },
-      "filter": true,
-      "cors": true
-    },
-    {
-      "name": "doh.tiarap.org",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.tiarap.org",
-        "cors": true
-      },
-      "description": "Non-Logging DNS-over-HTTPS server, cached via Cloudflare.\nFilters out ads, trackers and malware, NO ECS, supports DNSSEC.",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
       },
       "filter": true,
       "cors": true
