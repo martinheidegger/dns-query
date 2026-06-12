@@ -174,16 +174,6 @@
       "filter": true
     },
     {
-      "name": "cipherdns-jb1-doh-za",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "jb1-doh.cipherdns.co.za",
-        "cors": true
-      },
-      "description": "High-performance privacy DoH resolver based in South Africa. Zero logging, DNSSEC validation, unfiltered raw resolution.",
-      "cors": true
-    },
-    {
       "name": "circl-doh",
       "endpoint": {
         "protocol": "https:",
@@ -397,20 +387,6 @@
         "long": 4.8995
       },
       "cors": true
-    },
-    {
-      "name": "dnsbunker",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dnsbunker.org"
-      },
-      "description": "A DNS resolver located in Germany.\nDesigned to block ads, malware, and surveillance. No logs.\nhttps://dnsbunker.org",
-      "country": "Bangladesh",
-      "location": {
-        "lat": 23.7255,
-        "long": 90.4293
-      },
-      "filter": true
     },
     {
       "name": "dnscrypt.ca-ipv4-doh",
