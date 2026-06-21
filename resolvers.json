@@ -640,6 +640,21 @@
       "cors": true
     },
     {
+      "name": "jp.tiar.app-doh",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "jp.tiar.app",
+        "cors": true
+      },
+      "description": "Non-Logging, Non-Filtering DNS-over-HTTPS server in Japan.\nNo ECS, Support DNSSEC",
+      "country": "Japan",
+      "location": {
+        "lat": 35.6882,
+        "long": 139.7532
+      },
+      "cors": true
+    },
+    {
       "name": "jp.tiarap.org",
       "endpoint": {
         "protocol": "https:",
