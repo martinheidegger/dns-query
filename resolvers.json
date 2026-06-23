@@ -8,11 +8,6 @@
         "host": "adl.adfilter.net"
       },
       "description": "Hosted in Adelaide, Australia.\nBlocks ads, malware, trackers and more. No persistent logs. DNSSEC. No EDNS Client-Subnet.",
-      "country": "India",
-      "location": {
-        "lat": 27.1802,
-        "long": 78.0171
-      },
       "filter": true
     },
     {
@@ -22,11 +17,6 @@
         "host": "per.adfilter.net"
       },
       "description": "Hosted in Perth, Australia.\nBlocks ads, malware, trackers and more. No persistent logs. DNSSEC. No EDNS Client-Subnet.",
-      "country": "Australia",
-      "location": {
-        "lat": -31.8575,
-        "long": 115.8913
-      },
       "filter": true
     },
     {
@@ -36,26 +26,16 @@
         "host": "syd.adfilter.net"
       },
       "description": "Hosted in Sydney, Australia.\nBlocks ads, malware, trackers and more. No persistent logs. DNSSEC. No EDNS Client-Subnet.",
-      "country": "Australia",
-      "location": {
-        "lat": -33.7806,
-        "long": 151.1181
-      },
       "filter": true
     },
     {
       "name": "adguard-dns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.14.14",
-        "ipv4": "94.140.14.14"
+        "host": "94.140.15.15",
+        "ipv4": "94.140.15.15"
       },
       "description": "Remove ads and protect your computer from malware (over DoH)",
-      "country": "France",
-      "location": {
-        "lat": 48.8582,
-        "long": 2.3387
-      },
       "filter": true
     },
     {
@@ -71,15 +51,10 @@
       "name": "adguard-dns-family-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.14.15",
-        "ipv4": "94.140.14.15"
+        "host": "94.140.15.16",
+        "ipv4": "94.140.15.16"
       },
       "description": "AdGuard DNS with safesearch and adult content blocking (over DoH)",
-      "country": "France",
-      "location": {
-        "lat": 48.8582,
-        "long": 2.3387
-      },
       "filter": true
     },
     {
@@ -95,15 +70,10 @@
       "name": "adguard-dns-unfiltered-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.14.140",
-        "ipv4": "94.140.14.140"
+        "host": "94.140.14.141",
+        "ipv4": "94.140.14.141"
       },
-      "description": "AdGuard public DNS servers without filters (over DoH)",
-      "country": "France",
-      "location": {
-        "lat": 48.8582,
-        "long": 2.3387
-      }
+      "description": "AdGuard public DNS servers without filters (over DoH)"
     },
     {
       "name": "adguard-dns-unfiltered-doh-ipv6",
@@ -117,15 +87,10 @@
       "name": "alidns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "139.129.137.137",
-        "ipv4": "139.129.137.137"
+        "host": "182.40.70.12",
+        "ipv4": "182.40.70.12"
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by Alibaba-Cloud.\nHomepage: https://alidns.com\nWarning: GFW filtering rules are applied by this resolver.",
-      "country": "China",
-      "location": {
-        "lat": 36.066,
-        "long": 120.3694
-      },
       "filter": true,
       "log": true
     },
@@ -136,11 +101,6 @@
         "host": "223.5.5.5"
       },
       "description": "A public DNS resolver over IPv6 that supports DoH/DoT in mainland China, provided by Alibaba-Cloud.\nHomepage: https://alidns.com\nWarning: GFW filtering rules are applied by this resolver.",
-      "country": "China",
-      "location": {
-        "lat": 34.7725,
-        "long": 113.7266
-      },
       "filter": true,
       "log": true
     },
@@ -152,11 +112,6 @@
         "cors": true
       },
       "description": "DNSSEC, No-filter and No-log DoH resolver operated by Artikel10 association. Homepage: https://artikel10.org",
-      "country": "Germany",
-      "location": {
-        "lat": 51.9499,
-        "long": 14.7145
-      },
       "cors": true
     },
     {
@@ -166,12 +121,17 @@
         "host": "dns.brahma.world"
       },
       "description": "DNS-over-HTTPS server. Non Logging, filters ads, trackers and malware. DNSSEC ready, QNAME Minimization, No EDNS Client-Subnet.\nHosted in Nuremberg, Germany. (https://dns.brahma.world)",
-      "country": "Germany",
-      "location": {
-        "lat": 51.2993,
-        "long": 9.491
-      },
       "filter": true
+    },
+    {
+      "name": "cipherdns-ct1-doh-za",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "ct1-doh.cipherdns.co.za",
+        "cors": true
+      },
+      "description": "High-performance privacy DoH resolver based in Cape Town, South Africa. Zero logging, DNSSEC validation, unfiltered raw resolution.",
+      "cors": true
     },
     {
       "name": "circl-doh",
@@ -179,12 +139,7 @@
         "protocol": "https:",
         "host": "dns.circl.lu"
       },
-      "description": "DoH server operated by CIRCL, Computer Incident Response Center Luxembourg.\nHosted in Bettembourg, Luxembourg.",
-      "country": "Luxembourg",
-      "location": {
-        "lat": 49.7498,
-        "long": 6.1661
-      }
+      "description": "DoH server operated by CIRCL, Computer Incident Response Center Luxembourg.\nHosted in Bettembourg, Luxembourg."
     },
     {
       "name": "cisco-doh",
@@ -194,11 +149,6 @@
         "ipv4": "146.112.41.2"
       },
       "description": "Remove your DNS blind spot (DoH protocol)\nWarning: Doesn't work any more in some countries such as France and Portugal.\nWarning: modifies your queries to include a copy of your network\naddress when forwarding them to a selection of companies and organizations.",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
       "filter": true,
       "log": true
     },
@@ -206,15 +156,11 @@
       "name": "cloudflare",
       "endpoint": {
         "protocol": "https:",
-        "host": "cloudflare-dns.com",
+        "host": "162.159.46.1",
+        "ipv4": "162.159.46.1",
         "cors": true
       },
       "description": "Cloudflare DNS (anycast) - aka 1.1.1.1 / 1.0.0.1",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
       "cors": true
     },
     {
@@ -226,11 +172,6 @@
         "cors": true
       },
       "description": "Cloudflare DNS (anycast) with malware protection and parental control - aka 1.1.1.3 / 1.0.0.3",
-      "country": "Australia",
-      "location": {
-        "lat": -33.494,
-        "long": 143.2104
-      },
       "filter": true,
       "cors": true
     },
@@ -243,11 +184,6 @@
         "cors": true
       },
       "description": "Cloudflare DNS (anycast) with malware blocking - aka 1.1.1.2 / 1.0.0.2",
-      "country": "Australia",
-      "location": {
-        "lat": -33.494,
-        "long": 143.2104
-      },
       "filter": true,
       "cors": true
     },
@@ -258,11 +194,6 @@
         "host": "dns.comss.one"
       },
       "description": "Comss.one DNS - DNS with adblock filters and antiphishing, gaining popularity among russian-speaking users.",
-      "country": "Russia",
-      "location": {
-        "lat": 55.7386,
-        "long": 37.6068
-      },
       "filter": true
     },
     {
@@ -275,11 +206,6 @@
         "cors": true
       },
       "description": "ControlD Free DNS. Take CONTROL of your Internet. Block unwanted content, bypass geo-restrictions and be more productive. DoH protocol and No logging. - https://controld.com/free-dns\nThis DNS blocks Malware domains.",
-      "country": "Canada",
-      "location": {
-        "lat": 43.6319,
-        "long": -79.3716
-      },
       "filter": true,
       "cors": true
     },
@@ -293,11 +219,6 @@
         "cors": true
       },
       "description": "ControlD Free DNS. Take CONTROL of your Internet. Block unwanted content, bypass geo-restrictions and be more productive. DoH protocol and No logging. - https://controld.com/free-dns\nThis DNS blocks Malware, Ads & Tracking domains.",
-      "country": "Canada",
-      "location": {
-        "lat": 43.6319,
-        "long": -79.3716
-      },
       "filter": true,
       "cors": true
     },
@@ -311,11 +232,6 @@
         "cors": true
       },
       "description": "ControlD Free DNS. Take CONTROL of your Internet. Block unwanted content, bypass geo-restrictions and be more productive. DoH protocol and No logging. - https://controld.com/free-dns\nThis DNS blocks Malware, Ads & Tracking and Social Networks domains.",
-      "country": "Canada",
-      "location": {
-        "lat": 43.6319,
-        "long": -79.3716
-      },
       "filter": true,
       "cors": true
     },
@@ -329,11 +245,6 @@
         "cors": true
       },
       "description": "ControlD Free DNS. Take CONTROL of your Internet. Block unwanted content, bypass geo-restrictions and be more productive. DoH protocol and No logging. - https://controld.com/free-dns\nThis DNS blocks Malware, Ads & Tracking, Adult Content and Drugs domains.",
-      "country": "Canada",
-      "location": {
-        "lat": 43.6319,
-        "long": -79.3716
-      },
       "filter": true,
       "cors": true
     },
@@ -347,11 +258,6 @@
         "cors": true
       },
       "description": "ControlD Free DNS. Take CONTROL of your Internet. Block unwanted content, bypass geo-restrictions and be more productive. DoH protocol and No logging. - https://controld.com/free-dns\nThis DNS unblocks censored domains from various countries.",
-      "country": "Canada",
-      "location": {
-        "lat": 43.6319,
-        "long": -79.3716
-      },
       "cors": true
     },
     {
@@ -364,11 +270,6 @@
         "cors": true
       },
       "description": "ControlD Free DNS. Take CONTROL of your Internet. Block unwanted content, bypass geo-restrictions and be more productive. DoH protocol and No logging. - https://controld.com/free-dns\nThis is a Unfiltered DNS, no DNS record blocking or manipulation here, if you want to block Malware, Ads & Tracking or Social Network domains, use the other ControlD DNS configs.",
-      "country": "Canada",
-      "location": {
-        "lat": 43.6319,
-        "long": -79.3716
-      },
       "cors": true
     },
     {
@@ -377,27 +278,17 @@
         "protocol": "https:",
         "host": "dns.digitalsize.net"
       },
-      "description": "A public, non-tracking, non-filtering DNS resolver with DNSSEC enabled, QNAME minimization and no EDNS client subnet (https://dns.digitalsize.net).\nHosted in Germany.",
-      "country": "Germany",
-      "location": {
-        "lat": 51.2993,
-        "long": 9.491
-      }
+      "description": "A public, non-tracking, non-filtering DNS resolver with DNSSEC enabled, QNAME minimization and no EDNS client subnet (https://dns.digitalsize.net).\nHosted in Germany."
     },
     {
       "name": "dns.sb",
       "endpoint": {
         "protocol": "https:",
-        "host": "45.11.45.11",
-        "ipv4": "45.11.45.11",
+        "host": "185.222.222.222",
+        "ipv4": "185.222.222.222",
         "cors": true
       },
       "description": "DoH server run by xTom.com. No logs, no filtering, supports DNSSEC.\nHomepage: https://dns.sb",
-      "country": "Netherlands",
-      "location": {
-        "lat": 52.3824,
-        "long": 4.8995
-      },
       "cors": true
     },
     {
@@ -407,11 +298,6 @@
         "host": "dnsbunker.org"
       },
       "description": "A DNS resolver located in Germany.\nDesigned to block ads, malware, and surveillance. No logs.\nhttps://dnsbunker.org",
-      "country": "Bangladesh",
-      "location": {
-        "lat": 23.7255,
-        "long": 90.4293
-      },
       "filter": true
     },
     {
@@ -422,11 +308,6 @@
         "cors": true
       },
       "description": "Canadian based, unfiltered, DNSSEC validating, and no logs... for your pleasure. https://dnscrypt.ca/",
-      "country": "Croatia",
-      "location": {
-        "lat": 45.1667,
-        "long": 15.5
-      },
       "cors": true
     },
     {
@@ -437,11 +318,6 @@
         "cors": true
       },
       "description": "Public DoH resolver running with Pihole for Adblocking (https://dnsforge.de).\nNon-logging, AD-filtering, supports DNSSEC. Hosted in Germany.",
-      "country": "Germany",
-      "location": {
-        "lat": 51.2993,
-        "long": 9.491
-      },
       "filter": true,
       "cors": true
     },
@@ -453,11 +329,6 @@
         "cors": true
       },
       "description": "Public DoH resolver (https://dnsforge.de)\nNon-logging, non-filtering, supports DNSSEC. Hosted in Germany.",
-      "country": "Germany",
-      "location": {
-        "lat": 51.2993,
-        "long": 9.491
-      },
       "cors": true
     },
     {
@@ -478,11 +349,6 @@
         "ipv4": "120.53.53.53"
       },
       "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by dnspod/Tencent-cloud.\nHomepage: https://dnspod.cn\nWarning: GFW filtering rules are applied by this resolver.",
-      "country": "China",
-      "location": {
-        "lat": 34.7725,
-        "long": 113.7266
-      },
       "filter": true,
       "log": true
     },
@@ -530,11 +396,6 @@
         "cors": true
       },
       "description": "DNS-over-HTTPS server. Anycast, no logs, no censorship, DNSSEC.\nGlobally cached via Cloudflare.\nMaintained by Frank Denis.",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
       "cors": true
     },
     {
@@ -545,11 +406,6 @@
         "cors": true
       },
       "description": "DNS-over-HTTPS server accessible over IPv6. Anycast, no logs, no censorship, DNSSEC.\nGlobally cached via Cloudflare.\nMaintained by Frank Denis.",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
       "cors": true
     },
     {
@@ -558,12 +414,7 @@
         "protocol": "https:",
         "host": "doh.ffmuc.net"
       },
-      "description": "An open (non-logging, non-filtering, non-censoring) DoH resolver operated by Freifunk Munich with nodes in DE.\nhttps://ffmuc.net/",
-      "country": "Germany",
-      "location": {
-        "lat": 51.2993,
-        "long": 9.491
-      }
+      "description": "An open (non-logging, non-filtering, non-censoring) DoH resolver operated by Freifunk Munich with nodes in DE.\nhttps://ffmuc.net/"
     },
     {
       "name": "doh.ibksturm",
@@ -581,11 +432,6 @@
         "cors": true
       },
       "description": "Non-Logging DNS-over-HTTPS (HTTP/2 & HTTP/3) server located in Singapore.\nFilters out ads, trackers and malware, supports DNSSEC, provided by id-gmail.",
-      "country": "Singapore",
-      "location": {
-        "lat": 1.2929,
-        "long": 103.8547
-      },
       "filter": true,
       "cors": true
     },
@@ -597,11 +443,6 @@
         "cors": true
       },
       "description": "Non-Logging DNS-over-HTTPS server, cached via Cloudflare.\nFilters out ads, trackers and malware, NO ECS, supports DNSSEC.",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
       "filter": true,
       "cors": true
     },
@@ -609,16 +450,11 @@
       "name": "google",
       "endpoint": {
         "protocol": "https:",
-        "host": "8.8.8.8",
-        "ipv4": "8.8.8.8",
+        "host": "8.8.4.4",
+        "ipv4": "8.8.4.4",
         "cors": true
       },
       "description": "Google DNS (anycast)",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
       "log": true,
       "cors": true
     },
@@ -630,11 +466,6 @@
         "cors": true
       },
       "description": "DoH server operated by Internet Initiative Japan in Tokyo. Blocks child pornography.\nhttps://www.iij.ad.jp/",
-      "country": "Japan",
-      "location": {
-        "lat": 35.69,
-        "long": 139.69
-      },
       "filter": true,
       "log": true,
       "cors": true
@@ -647,11 +478,6 @@
         "cors": true
       },
       "description": "Non-Logging, Non-Filtering DNS-over-HTTPS server in Japan.\nNo ECS, Support DNSSEC",
-      "country": "Japan",
-      "location": {
-        "lat": 35.6882,
-        "long": 139.7532
-      },
       "cors": true
     },
     {
@@ -671,11 +497,6 @@
         "host": "doh.libredns.gr"
       },
       "description": "DoH server in Germany. No logging, but no DNS padding and no DNSSEC support.\nhttps://libredns.gr/",
-      "country": "Germany",
-      "location": {
-        "lat": 51.2993,
-        "long": 9.491
-      },
       "filter": true
     },
     {
@@ -686,11 +507,6 @@
         "path": "/noads"
       },
       "description": "DoH server in Germany. No logging, but no DNS padding and no DNSSEC support.\nno ads version, uses StevenBlack's host list: https://github.com/StevenBlack/hosts",
-      "country": "Germany",
-      "location": {
-        "lat": 51.2993,
-        "long": 9.491
-      },
       "filter": true
     },
     {
@@ -699,12 +515,7 @@
         "protocol": "https:",
         "host": "anycast.dns.nextdns.io"
       },
-      "description": "NextDNS is a cloud-based private DNS service that gives you full control\nover what is allowed and what is blocked on the Internet.\nDNSSEC, Anycast, Non-logging, NoFilters\nhttps://www.nextdns.io/",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      }
+      "description": "NextDNS is a cloud-based private DNS service that gives you full control\nover what is allowed and what is blocked on the Internet.\nDNSSEC, Anycast, Non-logging, NoFilters\nhttps://www.nextdns.io/"
     },
     {
       "name": "nextdns-ultralow",
@@ -721,12 +532,7 @@
         "protocol": "https:",
         "host": "dns.njal.la"
       },
-      "description": "Non-logging DoH server in Sweden operated by Njalla.\nhttps://dns.njal.la/",
-      "country": "Sweden",
-      "location": {
-        "lat": 59.3247,
-        "long": 18.056
-      }
+      "description": "Non-logging DoH server in Sweden operated by Njalla.\nhttps://dns.njal.la/"
     },
     {
       "name": "odoh-cloudflare",
@@ -786,9 +592,11 @@
       "name": "rethinkdns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "max.rethinkdns.com"
+        "host": "sky.rethinkdns.com",
+        "cors": true
       },
-      "description": "No-log, No-filter\nRethinkDNS, a stub (sky.rethinkdns.com hosted on Cloudflare) and recursive (max.rethinkdns.com hosted on fly.io) resolver\nThe stub server strips identification parameters from the request and acts as a proxy to another recursive resolver."
+      "description": "No-log, No-filter\nRethinkDNS, a stub (sky.rethinkdns.com hosted on Cloudflare) and recursive (max.rethinkdns.com hosted on fly.io) resolver\nThe stub server strips identification parameters from the request and acts as a proxy to another recursive resolver.",
+      "cors": true
     },
     {
       "name": "safesurfer-doh",
@@ -797,11 +605,6 @@
         "host": "doh.safesurfer.io"
       },
       "description": "Family safety blocklist that blocks almost 3 million adult websites, along with CSAM and more. Free to use, with paid options\navailable at my.safesurfer.io for custom blocking with additional content categories. Paid users can review their own logs.\nAccount holder logs are anonymized and used for filter improvement. Data is never sold. – https://safesurfer.io\nWarning: this server is incompatible with DNS anonymization.",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
       "filter": true,
       "log": true
     },
@@ -812,11 +615,6 @@
         "host": "dns.safesurfer.co.nz"
       },
       "description": "Family safety blocklist that blocks almost 3 million adult websites, along with CSAM and more. Free to use, with paid options\navailable at my.safesurfer.io for custom blocking with additional content categories. Paid users can review their own logs.\nAccount holder logs are anonymized and used for filter improvement. Data is never sold. – https://safesurfer.io\nWarning: this server is incompatible with DNS anonymization.",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
       "filter": true,
       "log": true
     },
