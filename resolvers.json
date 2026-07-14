@@ -11,15 +11,6 @@
       "filter": true
     },
     {
-      "name": "adfilter-per",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "per.adfilter.net"
-      },
-      "description": "Hosted in Perth, Australia.\nBlocks ads, malware, trackers and more. No persistent logs. DNSSEC. No EDNS Client-Subnet.\nOperated by ADFilter. Service page: https://adfilter.com/",
-      "filter": true
-    },
-    {
       "name": "adfilter-syd",
       "endpoint": {
         "protocol": "https:",
@@ -70,8 +61,8 @@
       "name": "adguard-dns-unfiltered-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.14.141",
-        "ipv4": "94.140.14.141"
+        "host": "94.140.14.140",
+        "ipv4": "94.140.14.140"
       },
       "description": "AdGuard DNS Non-filtering public resolver.\nDoes not block or rewrite domains.\nOperated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html"
     },
@@ -87,8 +78,8 @@
       "name": "alidns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "8.129.152.230",
-        "ipv4": "8.129.152.230"
+        "host": "120.55.203.44",
+        "ipv4": "120.55.203.44"
       },
       "description": "Alibaba Cloud Public DNS resolver.\nOperated by Alibaba Cloud for mainland China, with domestic, Hong Kong and overseas access nodes.\nHomepage: https://alidns.com\nWarning: GFW filtering rules are applied by this resolver.",
       "filter": true,
@@ -162,6 +153,16 @@
       },
       "description": "Cloudflare 1.1.1.1 for Families resolver.\nGlobal anycast. Blocks malware and adult-content domains.\nOperated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
       "filter": true,
+      "cors": true
+    },
+    {
+      "name": "cloudflare-ipv6",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.cloudflare.com",
+        "cors": true
+      },
+      "description": "Cloudflare 1.1.1.1 public resolver.\nIPv6 endpoint. Global anycast, non-filtering.\nOperated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
       "cors": true
     },
     {
@@ -290,6 +291,86 @@
       "filter": true
     },
     {
+      "name": "dnscry.pt-doh-bremen-ipv4",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "bre01.dnscry.pt",
+        "cors": true
+      },
+      "description": "dnscry.pt Bremen DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
+      "cors": true
+    },
+    {
+      "name": "dnscry.pt-doh-brussels-ipv4",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "bru01.dnscry.pt",
+        "cors": true
+      },
+      "description": "dnscry.pt Brussels DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
+      "cors": true
+    },
+    {
+      "name": "dnscry.pt-doh-dusseldorf-ipv4",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dus01.dnscry.pt",
+        "cors": true
+      },
+      "description": "dnscry.pt Düsseldorf DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
+      "cors": true
+    },
+    {
+      "name": "dnscry.pt-doh-dusseldorf02-ipv4",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dus02.dnscry.pt",
+        "cors": true
+      },
+      "description": "dnscry.pt Düsseldorf 02 DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
+      "cors": true
+    },
+    {
+      "name": "dnscry.pt-doh-dusseldorf03-ipv4",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dus03.dnscry.pt",
+        "cors": true
+      },
+      "description": "dnscry.pt Düsseldorf 03 DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
+      "cors": true
+    },
+    {
+      "name": "dnscry.pt-doh-frankfurt-ipv4",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "fra01.dnscry.pt",
+        "cors": true
+      },
+      "description": "dnscry.pt Frankfurt DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
+      "cors": true
+    },
+    {
+      "name": "dnscry.pt-doh-frankfurt02-ipv4",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "fra02.dnscry.pt",
+        "cors": true
+      },
+      "description": "dnscry.pt Frankfurt 02 DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
+      "cors": true
+    },
+    {
+      "name": "dnscry.pt-doh-molln-ipv4",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "moe01.dnscry.pt",
+        "cors": true
+      },
+      "description": "dnscry.pt Mölln DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
+      "cors": true
+    },
+    {
       "name": "dnscry.pt-doh-mumbai02-ipv6",
       "endpoint": {
         "protocol": "https:",
@@ -297,6 +378,26 @@
         "cors": true
       },
       "description": "dnscry.pt Mumbai 02 DoH resolver.\nIPv6 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
+      "cors": true
+    },
+    {
+      "name": "dnscry.pt-doh-munich-ipv4",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "muc01.dnscry.pt",
+        "cors": true
+      },
+      "description": "dnscry.pt Munich DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
+      "cors": true
+    },
+    {
+      "name": "dnscry.pt-doh-nuremberg-ipv4",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "nue01.dnscry.pt",
+        "cors": true
+      },
+      "description": "dnscry.pt Nuremberg DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
       "cors": true
     },
     {
@@ -414,6 +515,14 @@
         "host": "doh.ffmuc.net"
       },
       "description": "Freifunk Munich open resolver.\nOperated by Freifunk Munich with nodes in Germany. Non-logging, non-filtering, non-censoring.\nhttps://ffmuc.net/"
+    },
+    {
+      "name": "doh.ibksturm",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "ibksturm.synology.me"
+      },
+      "description": "ibksturm OpenNIC resolver in Switzerland.\nNo logs, DNSSEC. OpenNIC-based resolver operated by ibksturm."
     },
     {
       "name": "doh.tiar.app-doh",
@@ -592,11 +701,9 @@
       "name": "rethinkdns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "sky.rethinkdns.com",
-        "cors": true
+        "host": "max.rethinkdns.com"
       },
-      "description": "RethinkDNS public resolver.\nNo logging, no filtering. `sky.rethinkdns.com` is a Cloudflare-hosted stub resolver; `max.rethinkdns.com` is a recursive resolver hosted on Fly.io. The stub strips identification parameters from the request and proxies to another recursive resolver.\nOperated by RethinkDNS. Service page: https://rethinkdns.com/",
-      "cors": true
+      "description": "RethinkDNS public resolver.\nNo logging, no filtering. `sky.rethinkdns.com` is a Cloudflare-hosted stub resolver; `max.rethinkdns.com` is a recursive resolver hosted on Fly.io. The stub strips identification parameters from the request and proxies to another recursive resolver.\nOperated by RethinkDNS. Service page: https://rethinkdns.com/"
     },
     {
       "name": "safesurfer-doh",
