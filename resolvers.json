@@ -47,8 +47,8 @@
       "name": "adguard-dns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.14.14",
-        "ipv4": "94.140.14.14"
+        "host": "94.140.15.15",
+        "ipv4": "94.140.15.15"
       },
       "description": "AdGuard DNS Default public resolver.\nBlocks ads, trackers, phishing and malicious domains.\nOperated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
       "country": "France",
@@ -117,14 +117,14 @@
       "name": "alidns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "8.129.152.230",
-        "ipv4": "8.129.152.230"
+        "host": "47.108.0.63",
+        "ipv4": "47.108.0.63"
       },
       "description": "Alibaba Cloud Public DNS resolver.\nOperated by Alibaba Cloud for mainland China, with domestic, Hong Kong and overseas access nodes.\nHomepage: https://alidns.com\nWarning: GFW filtering rules are applied by this resolver.",
-      "country": "Singapore",
+      "country": "China",
       "location": {
-        "lat": 1.3667,
-        "long": 103.8
+        "lat": 34.7725,
+        "long": 113.7266
       },
       "filter": true,
       "log": true
@@ -888,6 +888,21 @@
       "cors": true
     },
     {
+      "name": "dnscry.pt-doh-eygelshoven-ipv4",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "eyg01.dnscry.pt",
+        "cors": true
+      },
+      "description": "dnscry.pt Eygelshoven DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
+      "country": "Netherlands",
+      "location": {
+        "lat": 52.3824,
+        "long": 4.8995
+      },
+      "cors": true
+    },
+    {
       "name": "dnscry.pt-doh-flint-ipv4",
       "endpoint": {
         "protocol": "https:",
@@ -1362,7 +1377,6 @@
       "endpoint": {
         "protocol": "https:",
         "host": "lis01.dnscry.pt",
-        "method": "POST",
         "cors": true
       },
       "description": "dnscry.pt Lisbon DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
@@ -1461,16 +1475,6 @@
         "lat": 39.9038,
         "long": -104.9419
       },
-      "cors": true
-    },
-    {
-      "name": "dnscry.pt-doh-manila-ipv4",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "mnl01.dnscry.pt",
-        "cors": true
-      },
-      "description": "dnscry.pt Manila DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
       "cors": true
     },
     {
@@ -1576,6 +1580,16 @@
         "lat": 55.7386,
         "long": 37.6068
       },
+      "cors": true
+    },
+    {
+      "name": "dnscry.pt-doh-mumbai02-ipv4",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "bom02.dnscry.pt",
+        "cors": true
+      },
+      "description": "DNSCry.pt Mumbai 02 - DoH, no filter, no logs, DNSSEC support (IPv4 server)\nhttps://www.dnscry.pt",
       "cors": true
     },
     {
@@ -2269,16 +2283,6 @@
       "cors": true
     },
     {
-      "name": "dnscry.pt-odoh-eygelshoven",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "eyg01.dnscry.pt",
-        "cors": true
-      },
-      "description": "dnscry.pt Eygelshoven ODoH target.\nOperated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
-      "cors": true
-    },
-    {
       "name": "dnscrypt.ca-ipv4-doh",
       "endpoint": {
         "protocol": "https:",
@@ -2317,10 +2321,10 @@
         "cors": true
       },
       "description": "DNSforge non-filtering resolver.\nPublic resolver in Germany. Non-logging, supports DNSSEC. https://dnsforge.de\nMaintained by DNSforge. Service page: https://dnsforge.de/",
-      "country": "Unknown",
+      "country": "Germany",
       "location": {
-        "lat": 47,
-        "long": 8
+        "lat": 51.2993,
+        "long": 9.491
       },
       "cors": true
     },
@@ -2427,14 +2431,6 @@
         "lat": 51.2993,
         "long": 9.491
       }
-    },
-    {
-      "name": "doh.ibksturm",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "ibksturm.synology.me"
-      },
-      "description": "ibksturm OpenNIC resolver in Switzerland.\nNo logs, DNSSEC. OpenNIC-based resolver operated by ibksturm."
     },
     {
       "name": "doh.tiar.app-doh",
