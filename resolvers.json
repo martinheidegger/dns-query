@@ -160,6 +160,19 @@
       "cors": true
     },
     {
+      "name": "circl-doh",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.circl.lu"
+      },
+      "description": "CIRCL Luxembourg public resolver.\nOperated by CIRCL, the Computer Incident Response Center Luxembourg. Hosted in Bettembourg, Luxembourg. https://www.circl.lu/",
+      "country": "Luxembourg",
+      "location": {
+        "lat": 49.7498,
+        "long": 6.1661
+      }
+    },
+    {
       "name": "cisco-doh",
       "endpoint": {
         "protocol": "https:",
@@ -845,51 +858,6 @@
       "cors": true
     },
     {
-      "name": "dnscry.pt-doh-dusseldorf03-ipv4",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dus03.dnscry.pt",
-        "cors": true
-      },
-      "description": "dnscry.pt Düsseldorf 03 DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
-      "country": "India",
-      "location": {
-        "lat": 28.3374,
-        "long": 77.32
-      },
-      "cors": true
-    },
-    {
-      "name": "dnscry.pt-doh-ebenecity02-ipv4",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "mru02.dnscry.pt",
-        "cors": true
-      },
-      "description": "dnscry.pt Ebène City 02 DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
-      "country": "Mauritius",
-      "location": {
-        "lat": -20.2833,
-        "long": 57.55
-      },
-      "cors": true
-    },
-    {
-      "name": "dnscry.pt-doh-eygelshoven-ipv4",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "eyg01.dnscry.pt",
-        "cors": true
-      },
-      "description": "dnscry.pt Eygelshoven DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
-      "country": "Netherlands",
-      "location": {
-        "lat": 52.3824,
-        "long": 4.8995
-      },
-      "cors": true
-    },
-    {
       "name": "dnscry.pt-doh-flint-ipv4",
       "endpoint": {
         "protocol": "https:",
@@ -901,21 +869,6 @@
       "location": {
         "lat": 51.4964,
         "long": -0.1224
-      },
-      "cors": true
-    },
-    {
-      "name": "dnscry.pt-doh-frankfurt-ipv4",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "fra01.dnscry.pt",
-        "cors": true
-      },
-      "description": "dnscry.pt Frankfurt DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
-      "country": "Germany",
-      "location": {
-        "lat": 51.2993,
-        "long": 9.491
       },
       "cors": true
     },
@@ -946,21 +899,6 @@
       "location": {
         "lat": 43.6319,
         "long": -79.3716
-      },
-      "cors": true
-    },
-    {
-      "name": "dnscry.pt-doh-gdansk-ipv4",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "gdn01.dnscry.pt",
-        "cors": true
-      },
-      "description": "dnscry.pt Gdańsk DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
-      "country": "Ukraine",
-      "location": {
-        "lat": 50.4522,
-        "long": 30.5287
       },
       "cors": true
     },
