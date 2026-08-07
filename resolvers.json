@@ -16,6 +16,20 @@
       "filter": true
     },
     {
+      "name": "adfilter-per",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "per.adfilter.net"
+      },
+      "description": "Hosted in Perth, Australia.\nBlocks ads, malware, trackers and more. No persistent logs. DNSSEC. No EDNS Client-Subnet.\nOperated by ADFilter. Service page: https://adfilter.com/",
+      "country": "Australia",
+      "location": {
+        "lat": -31.8575,
+        "long": 115.8913
+      },
+      "filter": true
+    },
+    {
       "name": "adfilter-syd",
       "endpoint": {
         "protocol": "https:",
@@ -33,8 +47,8 @@
       "name": "adguard-dns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.14.14",
-        "ipv4": "94.140.14.14"
+        "host": "94.140.15.15",
+        "ipv4": "94.140.15.15"
       },
       "description": "AdGuard DNS Default public resolver.\nBlocks ads, trackers, phishing and malicious domains.\nOperated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
       "country": "France",
@@ -103,14 +117,14 @@
       "name": "alidns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "113.142.83.132",
-        "ipv4": "113.142.83.132"
+        "host": "223.6.6.6",
+        "ipv4": "223.6.6.6"
       },
       "description": "Alibaba Cloud Public DNS resolver.\nOperated by Alibaba Cloud for mainland China, with domestic, Hong Kong and overseas access nodes.\nHomepage: https://alidns.com\nWarning: GFW filtering rules are applied by this resolver.",
       "country": "China",
       "location": {
-        "lat": 35.0688,
-        "long": 107.607
+        "lat": 34.7725,
+        "long": 113.7266
       },
       "filter": true,
       "log": true
@@ -144,6 +158,19 @@
         "long": 14.7145
       },
       "cors": true
+    },
+    {
+      "name": "circl-doh",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.circl.lu"
+      },
+      "description": "CIRCL Luxembourg public resolver.\nOperated by CIRCL, the Computer Incident Response Center Luxembourg. Hosted in Bettembourg, Luxembourg. https://www.circl.lu/",
+      "country": "Luxembourg",
+      "location": {
+        "lat": 49.7498,
+        "long": 6.1661
+      }
     },
     {
       "name": "cisco-doh",
@@ -693,6 +720,21 @@
         "cors": true
       },
       "description": "dnscry.pt Dallas DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
+      "country": "United States",
+      "location": {
+        "lat": 37.751,
+        "long": -97.822
+      },
+      "cors": true
+    },
+    {
+      "name": "dnscry.pt-doh-denver-ipv4",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "den01.dnscry.pt",
+        "cors": true
+      },
+      "description": "dnscry.pt Denver DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
       "country": "United States",
       "location": {
         "lat": 37.751,
@@ -1275,7 +1317,6 @@
       "endpoint": {
         "protocol": "https:",
         "host": "llk01.dnscry.pt",
-        "method": "POST",
         "cors": true
       },
       "description": "dnscry.pt Liberty Lake DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
@@ -1283,6 +1324,21 @@
       "location": {
         "lat": null,
         "long": null
+      },
+      "cors": true
+    },
+    {
+      "name": "dnscry.pt-doh-lisbon-ipv4",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "lis01.dnscry.pt",
+        "cors": true
+      },
+      "description": "dnscry.pt Lisbon DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
+      "country": "United States",
+      "location": {
+        "lat": 37.751,
+        "long": -97.822
       },
       "cors": true
     },
@@ -2206,8 +2262,8 @@
       "description": "DNSforge ad-blocking resolver.\nPublic resolver in Germany, running Pi-hole for ad blocking. Non-logging, supports DNSSEC. https://dnsforge.de\nMaintained by DNSforge. Service page: https://dnsforge.de/",
       "country": "Germany",
       "location": {
-        "lat": 51.2993,
-        "long": 9.491
+        "lat": 52.2998,
+        "long": 9.447
       },
       "filter": true,
       "cors": true
@@ -2226,6 +2282,16 @@
         "long": 8
       },
       "cors": true
+    },
+    {
+      "name": "dnslow.me",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dnslow.me"
+      },
+      "description": "dnslow.me privacy-first filtering resolver.\nOpen-source project with advertising and threat blocking. More info on the [homepage](https://dnslow.me) and [GitHub](https://github.com/PeterDaveHello/dnslow.me)",
+      "filter": true,
+      "log": true
     },
     {
       "name": "dnspod",
