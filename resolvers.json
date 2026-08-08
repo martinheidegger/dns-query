@@ -71,8 +71,8 @@
       "name": "adguard-dns-family-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.14.15",
-        "ipv4": "94.140.14.15"
+        "host": "94.140.15.16",
+        "ipv4": "94.140.15.16"
       },
       "description": "AdGuard DNS Family Protection resolver.\nBlocks ads, trackers, phishing, malicious and adult domains. Enforces safe search where available.\nOperated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
       "country": "France",
@@ -117,14 +117,14 @@
       "name": "alidns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "223.6.6.6",
-        "ipv4": "223.6.6.6"
+        "host": "139.129.137.137",
+        "ipv4": "139.129.137.137"
       },
       "description": "Alibaba Cloud Public DNS resolver.\nOperated by Alibaba Cloud for mainland China, with domestic, Hong Kong and overseas access nodes.\nHomepage: https://alidns.com\nWarning: GFW filtering rules are applied by this resolver.",
       "country": "China",
       "location": {
-        "lat": 34.7725,
-        "long": 113.7266
+        "lat": 36.066,
+        "long": 120.3694
       },
       "filter": true,
       "log": true
@@ -192,7 +192,7 @@
       "name": "cloudflare",
       "endpoint": {
         "protocol": "https:",
-        "host": "dns.cloudflare.com",
+        "host": "cloudflare-dns.com",
         "cors": true
       },
       "description": "Cloudflare 1.1.1.1 public resolver.\nGlobal anycast, non-filtering.\nOperated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
@@ -374,15 +374,15 @@
       "name": "dns.sb",
       "endpoint": {
         "protocol": "https:",
-        "host": "185.222.222.222",
-        "ipv4": "185.222.222.222",
+        "host": "45.11.45.11",
+        "ipv4": "45.11.45.11",
         "cors": true
       },
       "description": "DNS.SB public resolver.\nOperated by xTom. No logs, no filtering, supports DNSSEC. Homepage: https://dns.sb",
-      "country": "Unknown",
+      "country": "Netherlands",
       "location": {
-        "lat": 47,
-        "long": 8
+        "lat": 52.3824,
+        "long": 4.8995
       },
       "cors": true
     },
@@ -415,16 +415,6 @@
         "lat": 20.0063,
         "long": 77.006
       },
-      "cors": true
-    },
-    {
-      "name": "dnscry.pt-doh-allendale-ipv4",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "aqx01.dnscry.pt",
-        "cors": true
-      },
-      "description": "dnscry.pt Allendale DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
       "cors": true
     },
     {
@@ -1773,21 +1763,6 @@
       "cors": true
     },
     {
-      "name": "dnscry.pt-doh-saltlakecity-ipv4",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "slc01.dnscry.pt",
-        "cors": true
-      },
-      "description": "dnscry.pt Salt Lake City DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
-      "country": "Singapore",
-      "location": {
-        "lat": 1.3667,
-        "long": 103.8
-      },
-      "cors": true
-    },
-    {
       "name": "dnscry.pt-doh-sandefjord-ipv4",
       "endpoint": {
         "protocol": "https:",
@@ -2262,8 +2237,8 @@
       "description": "DNSforge ad-blocking resolver.\nPublic resolver in Germany, running Pi-hole for ad blocking. Non-logging, supports DNSSEC. https://dnsforge.de\nMaintained by DNSforge. Service page: https://dnsforge.de/",
       "country": "Germany",
       "location": {
-        "lat": 52.2998,
-        "long": 9.447
+        "lat": 51.2993,
+        "long": 9.491
       },
       "filter": true,
       "cors": true
@@ -2276,22 +2251,12 @@
         "cors": true
       },
       "description": "DNSforge non-filtering resolver.\nPublic resolver in Germany. Non-logging, supports DNSSEC. https://dnsforge.de\nMaintained by DNSforge. Service page: https://dnsforge.de/",
-      "country": "Unknown",
+      "country": "Germany",
       "location": {
-        "lat": 47,
-        "long": 8
+        "lat": 51.2993,
+        "long": 9.491
       },
       "cors": true
-    },
-    {
-      "name": "dnslow.me",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dnslow.me"
-      },
-      "description": "dnslow.me privacy-first filtering resolver.\nOpen-source project with advertising and threat blocking. More info on the [homepage](https://dnslow.me) and [GitHub](https://github.com/PeterDaveHello/dnslow.me)",
-      "filter": true,
-      "log": true
     },
     {
       "name": "dnspod",
@@ -2431,8 +2396,8 @@
       "name": "google",
       "endpoint": {
         "protocol": "https:",
-        "host": "8.8.8.8",
-        "ipv4": "8.8.8.8",
+        "host": "8.8.4.4",
+        "ipv4": "8.8.4.4",
         "cors": true
       },
       "description": "Google Public DNS resolver.\nGlobal anycast service operated by Google.\nOperated by Google Public DNS. Service page: https://developers.google.com/speed/public-dns",
@@ -2582,39 +2547,6 @@
       "description": "Tiarap Cloudflare-cached ODoH target.\nMaintained by id-gmail. No logs. Filters ads, trackers and malware.\nMaintained by id-gmail / Tiarap. Service page: https://tiarap.org/",
       "filter": true,
       "cors": true
-    },
-    {
-      "name": "qihoo360-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.360.cn"
-      },
-      "description": "Qihoo 360 public resolver.\nOperated by Qihoo 360. Has logs; GFW filtering rules are applied. Homepage: https://sdns.360.net",
-      "filter": true,
-      "log": true
-    },
-    {
-      "name": "rethinkdns-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "max.rethinkdns.com"
-      },
-      "description": "RethinkDNS public resolver.\nNo logging, no filtering. `sky.rethinkdns.com` is a Cloudflare-hosted stub resolver; `max.rethinkdns.com` is a recursive resolver hosted on Fly.io. The stub strips identification parameters from the request and proxies to another recursive resolver.\nOperated by RethinkDNS. Service page: https://rethinkdns.com/"
-    },
-    {
-      "name": "safesurfer-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.safesurfer.io"
-      },
-      "description": "SafeSurfer family-safety resolver.\nBlocks adult websites, CSAM and related family-safety categories. Free to use, with paid options available at my.safesurfer.io for custom blocking with additional content categories. Paid users can review their own logs.\nOperated by Safe Surfer. Service page: https://helpdesk.safesurfer.io/\nAccount holder logs are anonymized and used for filter improvement. Data is never sold. https://safesurfer.io\nWarning: this server is incompatible with DNS anonymization.",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
-      "filter": true,
-      "log": true
     },
     {
       "name": "safesurfer-doh-secondary-ipv4",
