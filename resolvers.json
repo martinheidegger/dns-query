@@ -47,8 +47,8 @@
       "name": "adguard-dns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.15.15",
-        "ipv4": "94.140.15.15"
+        "host": "94.140.14.14",
+        "ipv4": "94.140.14.14"
       },
       "description": "AdGuard DNS Default public resolver.\nAvailable through servers in multiple locations around the world.\nBlocks ads, trackers, phishing and malicious domains.\nOperated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
       "country": "France",
@@ -71,8 +71,8 @@
       "name": "adguard-dns-family-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.15.16",
-        "ipv4": "94.140.15.16"
+        "host": "94.140.14.15",
+        "ipv4": "94.140.14.15"
       },
       "description": "AdGuard DNS Family Protection resolver.\nAvailable through servers in multiple locations around the world.\nBlocks ads, trackers, phishing, malicious and adult domains. Enforces safe search where available.\nOperated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
       "country": "France",
@@ -95,8 +95,8 @@
       "name": "adguard-dns-unfiltered-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "94.140.14.141",
-        "ipv4": "94.140.14.141"
+        "host": "94.140.14.140",
+        "ipv4": "94.140.14.140"
       },
       "description": "AdGuard DNS Non-filtering public resolver.\nAvailable through servers in multiple locations around the world.\nDoes not block or rewrite domains.\nOperated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
       "country": "France",
@@ -117,8 +117,8 @@
       "name": "alidns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "120.55.203.44",
-        "ipv4": "120.55.203.44"
+        "host": "123.184.198.22",
+        "ipv4": "123.184.198.22"
       },
       "description": "Alibaba Cloud Public DNS resolver.\nOperated by Alibaba Cloud for mainland China, with domestic, Hong Kong and overseas access nodes.\nHomepage: https://alidns.com\nWarning: GFW filtering rules are applied by this resolver.",
       "country": "China",
@@ -179,7 +179,7 @@
       "name": "cloudflare",
       "endpoint": {
         "protocol": "https:",
-        "host": "cloudflare-dns.com",
+        "host": "dns.cloudflare.com",
         "cors": true
       },
       "description": "Cloudflare 1.1.1.1 public resolver.\nAvailable through servers in multiple locations around the world.\nNon-filtering.\nOperated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
@@ -358,6 +358,22 @@
       }
     },
     {
+      "name": "dns.sb",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "45.11.45.11",
+        "ipv4": "45.11.45.11",
+        "cors": true
+      },
+      "description": "DNS.SB public resolver.\nAvailable through servers in multiple locations around the world.\nOperated by xTom. No logs, no filtering, supports DNSSEC. Homepage: https://dns.sb",
+      "country": "Netherlands",
+      "location": {
+        "lat": 52.3824,
+        "long": 4.8995
+      },
+      "cors": true
+    },
+    {
       "name": "dnsbunker",
       "endpoint": {
         "protocol": "https:",
@@ -386,16 +402,6 @@
         "lat": 20.0063,
         "long": 77.006
       },
-      "cors": true
-    },
-    {
-      "name": "dnscry.pt-doh-allendale-ipv4",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "aqx01.dnscry.pt",
-        "cors": true
-      },
-      "description": "dnscry.pt Allendale DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
       "cors": true
     },
     {
@@ -1143,7 +1149,6 @@
       "endpoint": {
         "protocol": "https:",
         "host": "jkt01.dnscry.pt",
-        "method": "POST",
         "cors": true
       },
       "description": "dnscry.pt Jakarta DoH resolver.\nIPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation.\nhttps://www.dnscry.pt",
@@ -2214,8 +2219,7 @@
       "name": "dnspod",
       "endpoint": {
         "protocol": "https:",
-        "host": "1.12.12.12",
-        "ipv4": "1.12.12.12"
+        "host": "1.12.12.12"
       },
       "description": "DNSPod Public DNS resolver.\nAvailable through servers in multiple locations.\nOperated by Tencent Cloud DNSPod for users in China. Overseas access to the free Public DNS service may be unreliable.\nHomepage: https://dnspod.cn\nWarning: GFW filtering rules are applied by this resolver.",
       "country": "China",
@@ -2317,10 +2321,10 @@
         "cors": true
       },
       "description": "Dremaxx Open resolver. Non-filtering, no logs, DNSSEC validation. Recursive.\nAvailable through servers in Zurich, Dusseldorf and Houston.\nResolves on its own (not a frontend to another public resolver). IPv4 endpoint.\nOperated by Yannick Dreher. Homepage: https://dremaxx.de/en/dns-resolvers",
-      "country": "Belgium",
+      "country": "New Zealand",
       "location": {
-        "lat": 51.2385,
-        "long": 5.1145
+        "lat": -36.8506,
+        "long": 174.7679
       },
       "cors": true
     },
@@ -2332,10 +2336,10 @@
         "cors": true
       },
       "description": "Dremaxx Family resolver. Blocks adult content, no logs, DNSSEC validation. Recursive.\nAvailable through servers in Zurich, Dusseldorf and Houston.\nBlocks about 489,000 adult domains (OISD NSFW list, refreshed hourly); no ad, tracker or malware filtering. IPv4 endpoint.\nBlocked names are rewritten, so clients validating DNSSEC themselves get SERVFAIL for blocked signed domains.\nOperated by Yannick Dreher. Homepage: https://dremaxx.de/en/dns-resolvers",
-      "country": "New Zealand",
+      "country": "Saudi Arabia",
       "location": {
-        "lat": -36.8506,
-        "long": 174.7679
+        "lat": 25,
+        "long": 45
       },
       "filter": true,
       "cors": true
@@ -2509,11 +2513,9 @@
       "name": "rethinkdns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "sky.rethinkdns.com",
-        "cors": true
+        "host": "max.rethinkdns.com"
       },
-      "description": "RethinkDNS public resolver.\nAvailable through servers in multiple locations around the world.\nNo logging, no filtering. `sky.rethinkdns.com` is a Cloudflare-hosted stub resolver; `max.rethinkdns.com` is a recursive resolver hosted on Fly.io. The stub strips identification parameters from the request and proxies to another recursive resolver.\nOperated by RethinkDNS. Service page: https://rethinkdns.com/",
-      "cors": true
+      "description": "RethinkDNS public resolver.\nAvailable through servers in multiple locations around the world.\nNo logging, no filtering. `sky.rethinkdns.com` is a Cloudflare-hosted stub resolver; `max.rethinkdns.com` is a recursive resolver hosted on Fly.io. The stub strips identification parameters from the request and proxies to another recursive resolver.\nOperated by RethinkDNS. Service page: https://rethinkdns.com/"
     },
     {
       "name": "safesurfer-doh",
